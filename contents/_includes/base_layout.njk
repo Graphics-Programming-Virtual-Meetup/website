@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title or metadata.siteTitle }}</title>
+        <meta name="description" content="{{ description or metadata.description }}">
+        <link rel="stylesheet" href="/css/index.css">
+    </head>
+    <body>
+        <main id="main" class="container">
+            {{ content | safe }}
+        </main>
+        <footer>
+            <div class="container">
+                <p>
+                    © Graphics Programming Virtual Meetup.	Built with
+                    <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

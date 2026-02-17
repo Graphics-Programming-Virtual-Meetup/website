@@ -1,0 +1,59 @@
+@layer reset, base, theme, utilities;
+
+@import url("reset.css") layer(reset);
+
+@import url("base.css") layer(base);
+
+@import url("utilities.css") layer(utilities);
+
+:root {
+    color-scheme: light dark;
+    --color-bg: light-dark(oklab(100% 0 0), oklab(18% 0 0));
+    --color-border: light-dark(oklab(70% 0 0), oklab(25% 0 0));
+    --color-text: light-dark(oklab(18% 0 0), oklab(90% 0 0));
+    --color-text-muted: light-dark(oklab(23% 0 0), oklab(80% 0 0));
+    --color-text-dim: light-dark(oklab(40% 0 0), oklab(70% 0 0));
+    --color-link: light-dark(oklab(50% -0.02 -0.18), oklab(72% -0.02 -0.18));
+
+    --font-family: sans-serif;
+    --font-size: 16px;
+    --line-height: 1.6;
+
+    --space-xs: 0.6rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 4rem;
+
+    --container-width: 1200px;
+}
+
+@media (min-width:576px) {
+    :root {
+        --font-size: 106.25%
+    }
+}
+
+@media (min-width:768px) {
+    :root {
+        --font-size: 112.5%
+    }
+}
+
+@media (min-width:1024px) {
+    :root {
+        --font-size: 118.75%
+    }
+}
+
+@media (min-width:1280px) {
+    :root {
+        --font-size: 125%
+    }
+}
+
+@media (min-width:1536px) {
+    :root {
+        --font-size: 131.25%
+    }
+}

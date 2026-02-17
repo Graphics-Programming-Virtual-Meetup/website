@@ -13,4 +13,6 @@ export default async function (eleventyConfig) {
   // Copy `css/` to `_site/css/`
   // Keeps the same directory structure.
   eleventyConfig.addPassthroughCopy("css");
+
+  eleventyConfig.addPassthroughCopy("assets");
 }

@@ -1,5 +1,5 @@
 /**
-  * Classless base style of the site
+  * Mostly classless base style of the site
   */
 
 @view-transition {
@@ -76,6 +76,12 @@ header {
                 text-decoration: none;
             }
         }
+    }
+
+    .logo {
+        color: var(--color-text);
+        text-decoration: none;
+        font-weight: 600;
     }
 }
 

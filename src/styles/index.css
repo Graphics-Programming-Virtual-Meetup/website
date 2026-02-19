@@ -11,8 +11,8 @@
     --color-bg: light-dark(oklab(100% 0 0), oklab(18% 0 0));
     --color-border: light-dark(oklab(70% 0 0), oklab(25% 0 0));
     --color-text: light-dark(oklab(18% 0 0), oklab(90% 0 0));
-    --color-text-muted: light-dark(oklab(23% 0 0), oklab(80% 0 0));
-    --color-text-dim: light-dark(oklab(40% 0 0), oklab(70% 0 0));
+    --color-text-muted: light-dark(oklab(35% 0 0), oklab(80% 0 0));
+    --color-text-dim: light-dark(oklab(50% 0 0), oklab(70% 0 0));
     --color-link: light-dark(oklab(50% -0.02 -0.18), oklab(72% -0.02 -0.18));
 
     --font-family: sans-serif;

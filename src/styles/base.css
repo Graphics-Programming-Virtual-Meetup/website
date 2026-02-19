@@ -57,12 +57,34 @@ a {
     }
 }
 
+header {
+    border-bottom: 1px solid var(--color-border);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        a {
+            color: var(--color-text-muted);
+            transition: color .2s;
+            text-decoration: none;
+
+            &:hover {
+                color: var(--color-text);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 footer {
     border-top: 1px solid var(--color-border);
     font-size: 0.8rem;
     color: var(--color-text-dim);
+}
 
-    & .container {
-        padding: var(--space-sm) var(--space-lg);
-    }
+:is(header, footer) .container {
+    padding: var(--space-sm) var(--space-lg);
 }

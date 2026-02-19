@@ -1,5 +1,13 @@
 ---
 import "../styles/index.css";
+
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+
+const pageTitle = `${title} | GPVM`;
 ---
 
 <!doctype html>
@@ -8,17 +16,11 @@ import "../styles/index.css";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Graphics Programming Virtual Meetup</title>
-    <meta
-      name="description"
-      content="Welcome to Graphics Programming Virtual Meetup, a weekly virtual meetup dedicated to graphics programming!"
-    />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <meta property="og:title" content="Graphics Programming Virtual Meetup" />
-    <meta
-      property="og:description"
-      content="Welcome to Graphics Programming Virtual Meetup, a weekly virtual meetup dedicated to graphics programming!"
-    />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
     <meta property="og:locale" content="en" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://gpvm.org/" />
@@ -28,6 +30,18 @@ import "../styles/index.css";
     />
   </head>
   <body>
+    <header>
+      <div class="container">
+        <a href="/">Home</a>
+        <nav>
+          <ul class="list-style-none">
+            <li>
+              <a href="/blogroll">Blogroll</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main id="main" class="container">
       <slot />
     </main>

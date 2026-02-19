@@ -1,4 +1,4 @@
-@layer reset, base, theme, utilities;
+@layer reset, base, utilities;
 
 @import url("reset.css") layer(reset);
 
@@ -19,6 +19,7 @@
     --font-size: 16px;
     --line-height: 1.6;
 
+    --space-xxs: 0.25rem;
     --space-xs: 0.6rem;
     --space-sm: 1rem;
     --space-md: 1.5rem;

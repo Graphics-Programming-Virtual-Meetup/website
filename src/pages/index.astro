@@ -55,4 +55,39 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </li>
     <li>Jon Baker [<a href="https://jbaker.graphics/">Website</a>]</li>
   </ul>
+
+  <div class="webring">
+    <a href="https://graphics-programming.org/webring/frogs/gpvm/prev"> ⬅️ </a>
+    <a href="https://graphics-programming.org/webring/" class="inline-wrapper">
+      <span>GP Webring</span>
+      <img
+        src="https://graphics-programming.org/img/froge.webp"
+        alt="a friendly froge"
+      />
+    </a>
+    <a href="https://graphics-programming.org/webring/frogs/gpvm/next"> ➡️ </a>
+  </div>
 </BaseLayout>
+
+<style>
+  .webring {
+    display: flex;
+    margin-top: var(--space-md);
+    gap: var(--space-xxs);
+    justify-content: center;
+    font-size: 0.9em;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xxs);
+    }
+
+    img {
+      display: inline;
+      object-fit: contain;
+      width: 1.5em;
+      height: 1.5em;
+    }
+  }
+</style>

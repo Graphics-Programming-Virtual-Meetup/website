@@ -1,6 +1,7 @@
 ---
 layout: ../layouts/MarkdownPageLayout.astro
 title: Blogroll
+description: Blogroll for the attendees of Graphics Programming Virtual Meetup
 ---
 
 # Blogroll

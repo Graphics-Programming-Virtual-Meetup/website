@@ -1,0 +1,6 @@
+title = "Sascha Willems's How to Vulkan in 2026"
+link = "https://howtovulkan.com"
+categories = ["Vulkan/Tutorials"]
+description = "A minimalist tutorial from Sascha Willems on how to use the Vulkan graphics API in 2026. The idea is to get people started with rasterization in Vulkan using commonly supported features to make the API easier to use."
+formats = ["tutorial"]
+languages = ["c++"]

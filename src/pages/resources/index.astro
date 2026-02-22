@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+
+import ResourceList from "@components/resources/ResourceList.astro";
+import CategorySidebar from "@components/resources/CategorySidebar.astro";
+import ResourcesLayout from "@layouts/ResourcesLayout.astro";
+
+const resources = await getCollection("resources");
+---
+
+<ResourcesLayout
+  title="Resources"
+  description="Graphics programming resources and learning materials"
+  resources={resources}
+  allResources={resources}
+  currentPath=""
+>
+  <h1>Resources</h1>
+  <p>
+    This page contains a collection of graphics programming and adjacent
+    resources curated by our meetup attendees.
+  </p>
+  <p>
+    New to graphics programming and don't know where to start? Check our curated <a
+      href="/resources/beginner-friendly"
+    >
+      beginner friendly
+    </a> resources.
+  </p>
+</ResourcesLayout>

@@ -1,0 +1,9 @@
+title = " VkGuide by Victor Blanco"
+link = "https://vkguide.dev/"
+categories = ["Vulkan/Tutorials"]
+description = "The goal of this guide is to understand Vulkan correctly, and act as a stepping stone for then working in your own projects."
+formats = ["tutorial"]
+languages = ["c++"]
+
+[image]
+src = "assets/vkguide.png"

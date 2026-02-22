@@ -1,0 +1,44 @@
+---
+import { ResourceCategory } from "@utils/resourceCategory";
+
+interface Props {
+  category?: ResourceCategory;
+  currentPath: string;
+}
+
+function isActive(path: string): boolean {
+  return currentPath === path;
+}
+
+const { category, currentPath } = Astro.props;
+
+const link = category ? `/resources/${category.slug}` : "/resources";
+---
+
+<a
+  href={link}
+  class:list={[
+    {
+      active: category ? isActive(category.slug) : currentPath === "",
+    },
+  ]}
+>
+  {category ? category.last : "All Resources"}
+</a>
+
+<style>
+  a {
+    display: block;
+    padding: var(--space-xxs) 0;
+    text-decoration: none;
+    font-size: 0.8em;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+</style>

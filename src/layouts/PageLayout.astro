@@ -1,0 +1,19 @@
+---
+// Layout for "normal" pages. Some pages like resources have their own layout.
+
+import "../styles/index.css";
+
+import BaseLayout from "./BaseLayout.astro";
+
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <main id="main" class="container">
+    <slot />
+  </main>
+</BaseLayout>

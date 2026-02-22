@@ -1,0 +1,9 @@
+title = " Tinyrenderer: Software rendering in 500 lines of bare C++"
+link = "https://haqr.eu/tinyrenderer/"
+categories = ["Beginner Friendly", "Software Rasterization"]
+description = "Writing a software rasterization from scratch to demonstrate how graphics APIs work."
+formats = ["tutorial"]
+languages = ["c++"]
+
+[image]
+src = "assets/tinyrenderer.png"

@@ -1,0 +1,45 @@
+---
+// Layout for resource pages
+import type { CollectionEntry } from "astro:content";
+
+import "../styles/index.css";
+
+import BaseLayout from "./BaseLayout.astro";
+import CategorySidebar from "@components/resources/CategorySidebar.astro";
+import Item from "@components/resources/Item.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  allResources: CollectionEntry<"resources">[];
+  resources: CollectionEntry<"resources">[];
+  currentPath: string;
+}
+const { title, description, allResources, resources, currentPath } =
+  Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="resources-layout">
+    <CategorySidebar resources={allResources} currentPath={currentPath} />
+
+    <main>
+      <slot />
+      {
+        resources.map((resource) => (
+          <Item resource={resource} currentPath={currentPath} />
+        ))
+      }
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  .resources-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+</style>

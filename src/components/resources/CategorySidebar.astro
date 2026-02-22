@@ -1,0 +1,230 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+import { ResourceCategory } from "@utils/resourceCategory";
+import CategorySidebarLink from "./CategorySidebarLink.astro";
+
+interface CategoryNode {
+  category: ResourceCategory;
+  children: CategoryNode[];
+}
+
+// Compute all unique categories and
+function buildCategoryTree(
+  resources: CollectionEntry<"resources">[]
+): CategoryNode[] {
+  const categoryMap = new Map<string, CategoryNode>();
+
+  for (const resource of resources) {
+    for (const categoryStr of resource.data.categories) {
+      const resourceCategory = ResourceCategory.fromString(categoryStr);
+
+      for (const category of resourceCategory.ancestorsAndSelf()) {
+        if (!categoryMap.has(category.slug)) {
+          categoryMap.set(category.slug, {
+            category: category,
+            children: [],
+          });
+        }
+
+        const parent = category.parent;
+        if (parent) {
+          const parentNode = categoryMap.get(parent.slug)!;
+          const existing = parentNode.children.find(
+            (child) => child.category.slug == category.slug
+          );
+          if (!existing) {
+            parentNode.children.push(categoryMap.get(category.slug)!);
+          }
+        }
+      }
+    }
+  }
+
+  // Return only top-level categories
+  return Array.from(categoryMap.values())
+    .filter((cat) => !cat.category.slug.includes("/"))
+    .sort((a, b) => a.category.last.localeCompare(b.category.last));
+}
+
+interface Props {
+  resources: CollectionEntry<"resources">[];
+  currentPath?: string;
+}
+
+const { resources, currentPath = "" } = Astro.props;
+
+const categories = buildCategoryTree(resources);
+---
+
+<div class="category-sidebar">
+  <label class="sidebar-toggler">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      class="sidebar-toggler-open"
+    >
+      <title>menu</title>
+      <path
+        fill="currentColor"
+        d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"
+      >
+      </path>
+    </svg>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      class="sidebar-toggler-close"
+    >
+      <title>chevron-left</title>
+      <path
+        fill="currentColor"
+        d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+      >
+      </path>
+    </svg>
+    <input id="sidebar-toggler-input" type="checkbox" />
+  </label>
+  <nav>
+    <h2>Categories</h2>
+    <ul class="list-style-none">
+      <li>
+        <CategorySidebarLink currentPath={currentPath} />
+      </li>
+      {
+        categories.map(({ category, children }) => (
+          <li>
+            <CategorySidebarLink
+              category={category}
+              currentPath={currentPath}
+            />
+
+            {children.length > 0 && (
+              <ul class="list-style-none category-children">
+                {children.map(
+                  ({ category: child, children: grandchildren }) => (
+                    <li>
+                      <CategorySidebarLink
+                        category={child}
+                        currentPath={currentPath}
+                      />
+
+                      {grandchildren.length > 0 && (
+                        <ul class="list-style-none category-children">
+                          {grandchildren.map(({ category: grandchild }) => (
+                            <li>
+                              <CategorySidebarLink
+                                category={grandchild}
+                                currentPath={currentPath}
+                              />
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  )
+                )}
+              </ul>
+            )}
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</div>
+
+<style>
+  .category-sidebar {
+    --sidebar-width: 13rem;
+
+    .sidebar-toggler {
+      display: none;
+    }
+
+    nav {
+      padding: var(--space-sm);
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      background-color: var(--color-bg);
+    }
+
+    h2 {
+      font-size: 1rem;
+      margin-bottom: var(--space-sm);
+    }
+
+    .category-children {
+      padding-left: var(--space-sm);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .category-sidebar {
+      nav {
+        margin: var(--space-xl) var(--space-lg) var(--space-lg);
+      }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .category-sidebar {
+      position: fixed;
+      z-index: 40;
+      top: 0;
+      bottom: 0;
+      left: calc(-1 * var(--sidebar-width));
+
+      display: block;
+
+      .sidebar-toggler {
+        display: flex;
+        --sidebar-toggler-size: 3rem;
+        width: var(--sidebar-toggler-size);
+        height: var(--sidebar-toggler-size);
+
+        position: absolute;
+        left: var(--sidebar-width);
+        top: 4rem;
+
+        color: white;
+        background-color: oklch(0.685 0.169 237.323);
+        border-bottom-right-radius: 0.5rem;
+
+        &:hover {
+          background-color: oklch(0.588 0.158 241.966);
+        }
+
+        input {
+          display: none;
+        }
+
+        .sidebar-toggler-close {
+          display: none;
+        }
+      }
+
+      nav {
+        margin-top: 4rem;
+      }
+
+      &:has(#sidebar-toggler-input:checked) {
+        left: 0;
+
+        .sidebar-toggler-open {
+          display: none;
+        }
+
+        .sidebar-toggler-close {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .category-sidebar {
+      transition: 0.3s all linear;
+    }
+  }
+</style>

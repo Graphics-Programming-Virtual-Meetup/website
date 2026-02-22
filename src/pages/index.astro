@@ -1,8 +1,8 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import PageLayout from "@layouts/PageLayout.astro";
 ---
 
-<BaseLayout
+<PageLayout
   title="Home"
   description="Welcome to Graphics Programming Virtual Meetup, a weekly virtual meetup dedicated to graphics programming!"
 >
@@ -58,7 +58,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   <div class="webring">
     <a href="https://graphics-programming.org/webring/frogs/gpvm/prev"> ⬅️ </a>
-    <a href="https://graphics-programming.org/webring/" class="inline-wrapper">
+    <a href="https://graphics-programming.org/webring/">
       <span>GP Webring</span>
       <img
         src="https://graphics-programming.org/img/froge.webp"
@@ -67,7 +67,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </a>
     <a href="https://graphics-programming.org/webring/frogs/gpvm/next"> ➡️ </a>
   </div>
-</BaseLayout>
+</PageLayout>
 
 <style>
   .webring {

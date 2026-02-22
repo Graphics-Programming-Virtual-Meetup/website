@@ -1,0 +1,21 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+import CategorySidebar from "./CategorySidebar.astro";
+import Item from "./Item.astro";
+
+interface Props {
+  resources: CollectionEntry<"resources">[];
+  currentPath: string;
+}
+
+const { resources, currentPath } = Astro.props;
+---
+
+<ul class="list-style-none">
+  {
+    resources.map((resource) => (
+      <Item resource={resource} currentPath={currentPath} />
+    ))
+  }
+</ul>

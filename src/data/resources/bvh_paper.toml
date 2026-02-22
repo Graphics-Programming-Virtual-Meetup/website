@@ -1,0 +1,10 @@
+title = "A Survey on Bounding Volume Hierarchies for Ray Tracing"
+link = "https://meistdan.github.io/publications/bvh_star/paper.pdf"
+categories = ["Ray Tracing/Acceleration Structures"]
+description = "Excellent overview paper on BVH"
+formats = ["paper"]
+
+[image]
+src = "assets/BVHsurvey.png"
+alt = "Book cover of Learn OpenGL, featuring a smiling textured containers in OpenGL"
+

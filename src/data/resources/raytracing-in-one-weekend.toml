@@ -1,0 +1,10 @@
+title = "Ray Tracing in One Weekend series"
+link = "https://raytracing.github.io"
+categories = ["Beginner Friendly", "Ray Tracing"]
+description = "Series of online books teaching the basics of path tracing"
+formats = ["book", "tutorial"]
+languages = ["c++"]
+
+[image]
+src = "assets/rtow-book1-final.jpg"
+

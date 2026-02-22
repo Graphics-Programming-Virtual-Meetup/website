@@ -1,0 +1,182 @@
+---
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+import { ResourceCategory } from "@utils/resourceCategory";
+
+interface Props {
+  resource: CollectionEntry<"resources">;
+  currentPath: string;
+}
+
+const { resource, currentPath } = Astro.props;
+
+const {
+  title,
+  description,
+  link,
+  categories,
+  formats,
+  languages,
+  otherTags,
+  image,
+} = resource.data;
+
+const visibleCategories = categories
+  .map((str) => ResourceCategory.fromString(str))
+  .filter((cat) => {
+    const slug = cat.slug;
+    return slug !== currentPath && !slug.startsWith(currentPath + "/");
+  });
+---
+
+<li class="resource-item">
+  <div class="resource-details">
+    <a href={link} target="_blank" rel="noopener">
+      {title}
+    </a>
+    <p class="resource-description">{description}</p>
+    <div class="resource-meta">
+      <ul class="resource-tags">
+        {
+          visibleCategories.map((cat) => (
+            <li data-variant="category">
+              <a href={`/resources/${cat.slug}`}>{cat}</a>
+            </li>
+          ))
+        }
+        {formats.map((f) => <li data-variant="format">{f}</li>)}
+        {languages?.map((t) => <li data-variant="language">{t}</li>)}
+        {otherTags?.map((t) => <li data-variant="other">{t}</li>)}
+      </ul>
+    </div>
+  </div>
+
+  {
+    image ? (
+      <Image
+        src={image.src}
+        alt={image.alt ?? ""}
+        class="resource-image"
+        width={200}
+        height={150}
+        layout="constrained"
+      />
+    ) : (
+      <div class="resource-image-stub" />
+    )
+  }
+</li>
+
+<style>
+  .resource-item {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-sm);
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--color-border);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .resource-image {
+      border-radius: 4px;
+    }
+
+    /* images are hidden on very small display (< 576px) */
+    .resource-image,
+    .resource-image-stub {
+      display: none;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .resource-item {
+      .resource-image,
+      .resource-image-stub {
+        display: block;
+        flex-shrink: 0;
+        width: 200px;
+        height: 150px;
+      }
+    }
+  }
+
+  .resource-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .resource-description {
+    margin: var(--space-xxs) 0;
+    font-size: 0.9em;
+    color: var(--color-text-muted);
+  }
+
+  .resource-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+    margin-top: auto;
+  }
+
+  .resource-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-xxs);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      font-size: calc(max(0.7em, 14px));
+      padding: 0.1em 0.5em;
+      border-radius: 3px;
+      text-transform: capitalize;
+
+      & a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &[data-variant="category"] {
+        background-color: light-dark(
+          oklab(0.92 0.01 -0.04),
+          oklab(0.3 0.02 -0.06)
+        );
+        color: light-dark(oklab(0.42 0.06 -0.12), oklab(0.82 0.04 -0.12));
+      }
+
+      &[data-variant="format"] {
+        background-color: light-dark(
+          oklab(0.91 -0.01 -0.03),
+          oklab(0.3 -0.01 -0.06)
+        );
+        color: light-dark(oklab(0.36 -0.01 -0.12), oklab(0.82 -0.03 -0.09));
+      }
+
+      &[data-variant="language"] {
+        background-color: light-dark(
+          oklab(0.92 -0.04 0.03),
+          oklab(0.3 -0.04 0.04)
+        );
+        color: light-dark(oklab(0.44 -0.08 0.07), oklab(0.82 -0.09 0.08));
+      }
+
+      &[data-variant="other"] {
+        background-color: light-dark(
+          oklab(0.92 0.02 0.03),
+          oklab(0.3 0.03 0.04)
+        );
+        color: light-dark(oklab(0.44 0.05 0.07), oklab(0.82 0.05 0.08));
+      }
+    }
+  }
+</style>

@@ -1,0 +1,95 @@
+---
+import { getCollection, getEntry, render } from "astro:content";
+
+import BaseLayout from "@layouts/BaseLayout.astro";
+import ResourceList from "@components/resources/ResourceList.astro";
+
+import { ResourceCategory } from "@utils/resourceCategory";
+import ResourcesLayout from "@layouts/ResourcesLayout.astro";
+
+export async function getStaticPaths() {
+  const resources = await getCollection("resources");
+
+  const categoryByPath = new Map<string, ResourceCategory>();
+
+  // Collect all unique categories
+  for (const resource of resources) {
+    for (const resourceCategory of resource.data.categories) {
+      const ancestorsAndSelf =
+        ResourceCategory.fromString(resourceCategory).ancestorsAndSelf();
+      for (const category of ancestorsAndSelf) {
+        categoryByPath.set(category.slug, category);
+      }
+    }
+  }
+
+  return Array.from(categoryByPath).map(([path, category]) => ({
+    params: { category: path },
+    props: { category },
+  }));
+}
+
+interface Props {
+  category: ResourceCategory;
+}
+
+const { category } = Astro.props;
+const resources = await getCollection("resources");
+
+// Filter resources that match this category or are under it
+const filteredResources = resources.filter((resource) => {
+  return resource.data.categories.some((resourceCategory) =>
+    ResourceCategory.fromString(resourceCategory).belongsTo(category)
+  );
+});
+
+const displayName = category.last;
+
+const categoryEntry = await getEntry("resourceCategories", category.slug);
+const { Content } = categoryEntry
+  ? await render(categoryEntry)
+  : { Content: null };
+---
+
+<ResourcesLayout
+  title={`${displayName} Resources`}
+  description={`Graphics programming resources in the ${displayName} category`}
+  resources={filteredResources}
+  allResources={resources}
+  currentPath={category.slug}
+>
+  <h1>{displayName}</h1>
+  <ul class="breadcrumb list-style-none">
+    <a href="/resources/">All Resources</a>
+    {
+      category.ancestors().map((c) => (
+        <li>
+          <a href={`/resources/${c.slug}`}>{c.last}</a>
+        </li>
+      ))
+    }
+    <li>{category.last}</li>
+  </ul>
+
+  {Content && <Content />}
+</ResourcesLayout>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    flex-direction: row;
+    gap: 0.1em;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+
+    li {
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "/";
+        margin: 0 var(--space-xs);
+      }
+    }
+  }
+</style>

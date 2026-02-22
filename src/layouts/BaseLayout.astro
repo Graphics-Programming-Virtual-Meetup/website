@@ -1,4 +1,6 @@
 ---
+// Layout shared by every pages
+
 import "../styles/index.css";
 
 interface Props {
@@ -36,6 +38,9 @@ const pageTitle = `${title} | GPVM`;
         <nav>
           <ul class="list-style-none">
             <li>
+              <a href="/resources">Resources</a>
+            </li>
+            <li>
               <a href="/blogroll">Blogroll</a>
             </li>
             <li>
@@ -45,9 +50,9 @@ const pageTitle = `${title} | GPVM`;
         </nav>
       </div>
     </header>
-    <main id="main" class="container">
-      <slot />
-    </main>
+
+    <slot />
+
     <footer>
       <div class="container">
         <p>

@@ -47,6 +47,13 @@ main {
     }
 }
 
+nav {
+  ul {
+    display: flex;
+    gap: 1em;
+  }
+}
+
 
 a {
     color: var(--color-link);

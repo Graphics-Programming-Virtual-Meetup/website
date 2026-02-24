@@ -1,0 +1,5 @@
+title = "Graphics Pipelines for Young Bloods"
+link = "https://www.jeremyong.com/cpp/2021/05/20/graphics-pipelines-for-young-bloods/"
+categories = ["Rasterization/Shading Techniques"]
+description = "Describes forward/defered shading techniques and various tradeoffs"
+formats = ["article"]

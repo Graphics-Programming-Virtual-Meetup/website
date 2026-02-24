@@ -1,0 +1,7 @@
+title = "7.3 Bounding Volume Hierarchies | Physically Based Rendering"
+link = "https://pbr-book.org/4ed/Primitives_and_Intersection_Acceleration/Bounding_Volume_Hierarchies"
+categories = ["Ray Tracing/Acceleration Structures"]
+description = "PBRT book chapter on how to build a BVH"
+formats = ["article"]
+languages = ["c++"]
+priority = 15

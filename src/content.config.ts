@@ -19,19 +19,20 @@ const resources = defineCollection({
         formats: z.array(
           z.union([
             z.literal("assignments"),
+            z.literal("article"),
             z.literal("course"),
             z.literal("book"),
             z.literal("paper"),
+            z.literal("repository"),
+            z.literal("slides"),
             z.literal("tutorial"),
             z.literal("video"),
-            z.literal("slides"),
-            z.literal("repository"),
-          ]),
+          ])
         ),
         languages: z.array(z.string()).optional(),
         other_tags: z.array(z.string()).optional(),
         paid: z.boolean().default(false),
-        priority: z.number().default(0)
+        priority: z.number().default(0),
       })
       .transform(({ other_tags, ...rest }) => ({
         ...rest,
@@ -42,8 +43,8 @@ const resources = defineCollection({
 const resourceCategories = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/data/resource_categories" }),
   schema: z.object({
-    priority: z.number().default(0)
-  })
+    priority: z.number().default(0),
+  }),
 });
 
 export const collections = { resources, resourceCategories };

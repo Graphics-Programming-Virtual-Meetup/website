@@ -1,0 +1,10 @@
+title = "How to build a BVH Series"
+link = "https://jacco.ompf2.com/2022/04/13/how-to-build-a-bvh-part-1-basics"
+categories = ["Ray Tracing/Acceleration Structures"]
+description = "A blog post series delving into building a BVH from scratch"
+formats = ["article"]
+languages = ["c++"]
+priority = 20
+
+[image]
+src = "assets/how_to_build_bvh.jpg"

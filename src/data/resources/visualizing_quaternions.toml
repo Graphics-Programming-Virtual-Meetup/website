@@ -1,0 +1,8 @@
+title = "Visualizing quaternions by 3blue1brown"
+link = "https://eater.net/quaternions"
+categories = ["Math/Rotation", "Math/Quaternions"]
+description = "A great intereactive introduction/refresher for quaternions. It focuses on intuition rather than mathematical definitions"
+formats = ["article", "video"]
+
+[image]
+src = "assets/visualizing_quaternions.jpg"

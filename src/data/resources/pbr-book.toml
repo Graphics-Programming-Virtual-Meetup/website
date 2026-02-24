@@ -1,6 +1,6 @@
 title = "Physically Based Rendering: From Theory to Implementation"
 link = "https://pbr-book.org/"
-categories = ["Ray Tracing"]
+categories = ["Ray Tracing/Overview"]
 description = "Comprehensive reference on physically based rendering techniques"
 formats = ["book"]
 languages = ["c++"]

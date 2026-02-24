@@ -1,0 +1,5 @@
+title = "Gimbal lock confusion"
+link = "https://computergraphics.stackexchange.com/questions/12273/gimbal-lock-confusion/#answer-12274"
+categories = ["Math/Gamedev", "Math/Rotation"]
+description = "A stackoverflow answer on why the Gimbal lock occurs"
+formats = ["article"]

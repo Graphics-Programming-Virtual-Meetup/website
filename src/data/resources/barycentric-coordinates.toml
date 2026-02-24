@@ -1,0 +1,5 @@
+title = "Barycentric Coordinates"
+link = "https://observablehq.com/@infowantstobeseen/barycentric-coordinates"
+categories = ["Math/Gamedev"]
+description = "An interactive introduction to barycentric coordinates. It starts with linear-interpolation and generalize it to triangles and higher-dimensions."
+formats = ["article"]

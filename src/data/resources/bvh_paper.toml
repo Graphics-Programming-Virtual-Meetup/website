@@ -3,6 +3,7 @@ link = "https://meistdan.github.io/publications/bvh_star/paper.pdf"
 categories = ["Ray Tracing/Acceleration Structures"]
 description = "Excellent overview paper on BVH"
 formats = ["paper"]
+priority = 1
 
 [image]
 src = "assets/BVHsurvey.png"

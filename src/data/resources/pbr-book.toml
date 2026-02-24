@@ -4,6 +4,7 @@ categories = ["Ray Tracing"]
 description = "Comprehensive reference on physically based rendering techniques"
 formats = ["book"]
 languages = ["c++"]
+priority = 80
 
 [image]
 src = "assets/pbrt.jpg"

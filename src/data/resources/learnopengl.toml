@@ -1,10 +1,11 @@
 title = "Learn OpenGL"
 link = "https://learnopengl.com/"
-categories = ["Beginner Friendly", "OpenGL"]
+categories = ["Beginner Friendly", "OpenGL", "Overview"]
 description = "Learn OpenGL is the definitive resource for learning real-time renderer techniques as beginners. Even though it is an OpenGL tutorial, it also teaches rendering techniques at the same time."
 formats = ["tutorial"]
 languages = ["c++"]
+priority = 100
 
 [image]
 src = "assets/learn_opengl.png"
-alt = "Book cover of Learn OpenGL, featuring a smiling textured containers in OpenGL"
+alt = "a smiling textured containers in OpenGL"

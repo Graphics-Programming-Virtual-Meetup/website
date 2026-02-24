@@ -4,6 +4,7 @@ categories = ["Beginner Friendly", "Software Rasterization"]
 description = "Writing a software rasterization from scratch to demonstrate how graphics APIs work."
 formats = ["tutorial"]
 languages = ["c++"]
+priority = 70
 
 [image]
 src = "assets/tinyrenderer.png"

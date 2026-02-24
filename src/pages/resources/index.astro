@@ -1,11 +1,11 @@
 ---
 import { getCollection } from "astro:content";
 
-import ResourceList from "@components/resources/ResourceList.astro";
-import CategorySidebar from "@components/resources/CategorySidebar.astro";
 import ResourcesLayout from "@layouts/ResourcesLayout.astro";
 
-const resources = await getCollection("resources");
+const resources = (await getCollection("resources")).sort(
+  (a, b) => b.data.priority - a.data.priority
+);
 ---
 
 <ResourcesLayout

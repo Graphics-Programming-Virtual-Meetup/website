@@ -3,6 +3,7 @@ import type { CollectionEntry } from "astro:content";
 
 import { ResourceCategory } from "@utils/resourceCategory";
 import CategorySidebarLink from "./CategorySidebarLink.astro";
+import { getCollection } from "astro:content";
 
 interface CategoryNode {
   category: ResourceCategory;
@@ -11,8 +12,14 @@ interface CategoryNode {
 
 // Compute all unique categories and
 function buildCategoryTree(
-  resources: CollectionEntry<"resources">[]
+  resources: CollectionEntry<"resources">[],
+  categories: CollectionEntry<"resourceCategories">[]
 ): CategoryNode[] {
+  const categoryPriority = new Map<string, number>();
+  for (const category of categories) {
+    categoryPriority.set(category.id, category.data.priority);
+  }
+
   const categoryMap = new Map<string, CategoryNode>();
 
   for (const resource of resources) {
@@ -44,7 +51,19 @@ function buildCategoryTree(
   // Return only top-level categories
   return Array.from(categoryMap.values())
     .filter((cat) => !cat.category.slug.includes("/"))
-    .sort((a, b) => a.category.last.localeCompare(b.category.last));
+    .sort((a, b) => {
+      // Sort by priority. If priority is the same, sort alphabetically
+      const aPriority = categoryPriority.get(a.category.slug) ?? 0;
+      const bPriority = categoryPriority.get(b.category.slug) ?? 0;
+
+      if (aPriority < bPriority) {
+        return 1;
+      } else if (aPriority > bPriority) {
+        return -1;
+      }
+
+      return a.category.last.localeCompare(b.category.last);
+    });
 }
 
 interface Props {
@@ -54,7 +73,10 @@ interface Props {
 
 const { resources, currentPath = "" } = Astro.props;
 
-const categories = buildCategoryTree(resources);
+const categories = buildCategoryTree(
+  resources,
+  await getCollection("resourceCategories")
+);
 ---
 
 <div class="category-sidebar">

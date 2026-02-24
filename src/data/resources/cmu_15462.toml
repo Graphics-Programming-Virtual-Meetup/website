@@ -2,7 +2,7 @@ title = "CMU's introductory to Computer Graphics (2020)"
 link = "https://www.youtube.com/playlist?list=PL9_jI1bdZmz2emSh0UQ5iOdT2xRHFHL7E"
 categories = ["Beginner Friendly", "Course", "Overview"]
 description = "A comprehensive introduction to various topics in computer graphics"
-formats = ["video", "assignments"]
+formats = ["video", "assignments", "slides"]
 languages = ["c++"]
 priority = 100
 

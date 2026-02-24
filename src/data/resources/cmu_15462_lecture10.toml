@@ -1,0 +1,9 @@
+title = " Lecture 10: Meshes and Manifolds (CMU 15-462/662) "
+link = "https://www.youtube.com/watch?v=HePDHsp8spU"
+categories = ["Geometry/Representation"]
+description = " Great overview, and also spend significant time on the half-edge data structure"
+formats = ["video"]
+
+[image]
+src = "assets/15462-10.jpg"
+

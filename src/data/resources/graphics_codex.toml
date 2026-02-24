@@ -7,4 +7,4 @@ languages = ["c++"]
 priority = 50
 
 [image]
-src = "assets/vkguide.png"
+src = "assets/graphics-codex.png"

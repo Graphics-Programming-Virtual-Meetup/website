@@ -1,0 +1,8 @@
+title = "Immersive Linear Algebra"
+link = "https://immersivemath.com/ila/index.html"
+categories = ["Math/Linear Algebra"]
+description = "Free online linear algebra book with fully interactive figures"
+formats = ["book"]
+
+[image]
+src = "assets/immersive_linear_algebra.png"

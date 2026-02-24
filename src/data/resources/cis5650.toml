@@ -5,3 +5,7 @@ description = "A course that introduce GPU parallel programming with a Computer 
 formats = ["video", "assignments", "slides"]
 languages = ["c++"]
 priority = 30
+
+[image]
+src = "assets/cis-5650.jpg"
+

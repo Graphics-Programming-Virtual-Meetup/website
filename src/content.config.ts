@@ -30,6 +30,7 @@ const resources = defineCollection({
         ),
         languages: z.array(z.string()).optional(),
         other_tags: z.array(z.string()).optional(),
+        paid: z.boolean().default(false),
         priority: z.number().default(0)
       })
       .transform(({ other_tags, ...rest }) => ({

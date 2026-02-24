@@ -4,7 +4,7 @@ categories = ["Beginner Friendly", "Course", "Overview"]
 description = "A comprehensive introduction to various topics in computer graphics"
 formats = ["video", "assignments", "slides"]
 languages = ["c++"]
-priority = 100
+priority = 90
 
 [image]
 src = "assets/15462.jpg"

@@ -1,0 +1,10 @@
+title = "Math For Game Devs (2020)"
+link = "https://www.youtube.com/playlist?list=PLImQaTpSAdsD88wprTConznD1OY1EfK_V"
+categories = ["Beginner Friendly", "Math/Gamedev"]
+description = "Four part lecture on essential math for game developers by Freya Holmér"
+formats = ["video", "assignments"]
+priority = 1
+
+[image]
+src = "assets/math_for_gamedev.jpg"
+

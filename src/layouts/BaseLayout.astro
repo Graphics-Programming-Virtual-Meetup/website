@@ -1,7 +1,8 @@
 ---
 // Layout shared by every pages
 
-import "../styles/index.css";
+import "@styles/index.css";
+import Header from "@components/Header.astro";
 
 interface Props {
   title: string;
@@ -32,24 +33,7 @@ const pageTitle = `${title} | GPVM`;
     />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <a class="logo" href="/">GPVM</a>
-        <nav>
-          <ul class="list-style-none">
-            <li>
-              <a href="/resources">Resources</a>
-            </li>
-            <li>
-              <a href="/blogroll">Blogroll</a>
-            </li>
-            <li>
-              <a href="/faq">FAQ</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <Header />
 
     <slot />
 

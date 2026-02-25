@@ -1,0 +1,40 @@
+---
+
+---
+
+<header id="main-header">
+  <div class="container">
+    <nav>
+      <a class="logo" href="/">GPVM</a>
+
+      <ul class="list-style-none">
+        <li>
+          <a href="/resources">Resources</a>
+        </li>
+        <li>
+          <a href="/blogroll">Blogroll</a>
+        </li>
+        <li>
+          <a href="/faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // Hide header when scrolling down
+  const header = document.getElementById("main-header")!;
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    if (window.innerWidth > 1023) return;
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > lastScrollY && currentScrollY > header.offsetHeight) {
+      header.classList.add("header-hidden");
+    } else {
+      header.classList.remove("header-hidden");
+    }
+    lastScrollY = currentScrollY;
+  });
+</script>

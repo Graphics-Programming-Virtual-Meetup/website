@@ -79,35 +79,27 @@ const categories = buildCategoryTree(
 );
 ---
 
-<div class="category-sidebar">
-  <label class="sidebar-toggler">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      class="sidebar-toggler-open"
-    >
-      <title>menu</title>
-      <path
-        fill="currentColor"
-        d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"
-      >
-      </path>
-    </svg>
+{/* Classic label + input trick for pure HTML/CSS toggle */}
+<label class="sidebar-toggler">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <title>filter-menu-outline</title>
+    <path
+      d="M12 18.88A1 1 0 0 1 11.71 19.71A1 1 0 0 1 10.3 19.71L6.3 15.71A1 1 0 0 1 6 14.87V9.75L1.21 3.62A1 1 0 0 1 1.38 2.22A1 1 0 0 1 2 2H16A1 1 0 0 1 16.62 2.22A1 1 0 0 1 16.79 3.62L12 9.75V18.88M4 4L8 9.06V14.58L10 16.58V9.05L14 4M13 16L18 21L23 16Z"
+      fill="currentColor"></path>
+  </svg>
+  <input id="sidebar-toggler-input" type="checkbox" />
+</label>
 
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      class="sidebar-toggler-close"
-    >
-      <title>chevron-left</title>
-      <path
-        fill="currentColor"
-        d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
-      >
-      </path>
-    </svg>
-    <input id="sidebar-toggler-input" type="checkbox" />
-  </label>
+{
+  /* 
+    Backdrop when the sidebar is opened (only used on mobile). It covers all 
+    the remaining part of the screen, and when a user click it, the sidebar will get closed.
+  */
+}
+<label class="sidebar-backdrop" for="sidebar-toggler-input" aria-hidden="true"
+></label>
+
+<div class="category-sidebar">
   <nav>
     <h2>Categories</h2>
     <ul class="list-style-none">
@@ -157,13 +149,64 @@ const categories = buildCategoryTree(
 </div>
 
 <style>
-  .category-sidebar {
-    --sidebar-width: 13rem;
+  .sidebar-toggler {
+    --sidebar-toggler-size: 4rem;
+    --bg-start: light-dark(
+      oklab(0.55 -0.02 -0.22),
+      oklab(0.47 -0.03 -0.25 / 0.8)
+    );
+    --bg-mid: light-dark(oklab(0.48 -0.02 -0.22), oklab(0.4 -0.02 -0.21 / 0.9));
+    --bg-end: light-dark(
+      oklab(0.42 -0.02 -0.2),
+      oklab(0.34 -0.02 -0.17 / 0.95)
+    );
 
+    display: flex;
+    width: var(--sidebar-toggler-size);
+    height: var(--sidebar-toggler-size);
+    z-index: 30;
+
+    position: fixed;
+    bottom: var(--space-md);
+    left: var(--space-md);
+
+    color: light-dark(oklab(1 0 0), oklab(1 0 0));
+    background: linear-gradient(
+      135deg,
+      var(--bg-start) 0%,
+      var(--bg-mid) 50%,
+      var(--bg-end) 100%
+    );
+    border: 1px solid
+      light-dark(oklab(0.42 -0.02 -0.2 / 0.4), oklab(1 0 0 / 0.2));
+    border-radius: 50%;
+    box-shadow:
+      0 8px 32px
+        light-dark(
+          oklab(0.48 -0.02 -0.22 / 0.35),
+          oklab(0.47 -0.03 -0.25 / 0.25)
+        ),
+      0 4px 16px light-dark(oklab(0.2 0 0 / 0.15), oklab(0 0 0 / 0.1)),
+      inset 0 1px 0 light-dark(oklab(1 0 0 / 0.25), oklab(1 0 0 / 0.2));
+
+    & svg {
+      width: calc(0.5 * var(--sidebar-toggler-size));
+      height: calc(0.5 * var(--sidebar-toggler-size));
+      margin: auto;
+    }
+
+    & input {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1024px) {
     .sidebar-toggler {
       display: none;
     }
+  }
 
+  .category-sidebar {
     nav {
       padding: var(--space-sm);
       border: 1px solid var(--color-border);
@@ -183,6 +226,8 @@ const categories = buildCategoryTree(
 
   @media (min-width: 1024px) {
     .category-sidebar {
+      align-self: flex-start;
+
       nav {
         margin: var(--space-xl) var(--space-lg) var(--space-lg);
       }
@@ -190,63 +235,44 @@ const categories = buildCategoryTree(
   }
 
   @media (max-width: 1023px) {
+    .sidebar-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 39;
+      background-color: rgb(0 0 0 / 0.1);
+      backdrop-filter: blur(1px);
+
+      .sidebar-toggler:has(#sidebar-toggler-input:checked) ~ & {
+        display: block;
+      }
+    }
+
     .category-sidebar {
       position: fixed;
       z-index: 40;
       top: 0;
       bottom: 0;
-      left: calc(-1 * var(--sidebar-width));
-
       display: block;
 
-      .sidebar-toggler {
-        display: flex;
-        --sidebar-toggler-size: 3rem;
-        width: var(--sidebar-toggler-size);
-        height: var(--sidebar-toggler-size);
+      /* hide at left-side of the screen unless the input is toggled */
+      transform: translateX(-100%);
 
-        position: absolute;
-        left: var(--sidebar-width);
-        top: 4rem;
-
-        color: white;
-        background-color: oklch(0.685 0.169 237.323);
-        border-bottom-right-radius: 0.5rem;
-
-        &:hover {
-          background-color: oklch(0.588 0.158 241.966);
-        }
-
-        input {
-          display: none;
-        }
-
-        .sidebar-toggler-close {
-          display: none;
-        }
+      .sidebar-toggler:has(#sidebar-toggler-input:checked) ~ & {
+        transform: translateX(0);
       }
 
       nav {
-        margin-top: 4rem;
-      }
-
-      &:has(#sidebar-toggler-input:checked) {
-        left: 0;
-
-        .sidebar-toggler-open {
-          display: none;
-        }
-
-        .sidebar-toggler-close {
-          display: block;
-        }
+        min-width: calc(min(30ch, 80vw));
+        height: 100vh;
+        overflow-y: scroll;
       }
     }
   }
 
   @media (prefers-reduced-motion: no-preference) {
     .category-sidebar {
-      transition: 0.3s all linear;
+      transition: 0.2s transform linear;
     }
   }
 </style>

@@ -68,13 +68,30 @@ a {
 
 header {
   border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+
+  @media (max-width: 1023px) {
+    /* sticky header on mobile */ 
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    transition: transform 0.3s ease;
+
+    &.header-hidden {
+      transform: translateY(-100%);
+    }
+  }
 
   .container {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
   }
 
   nav {
+    display: flex;
+    flex: 1;
+    justify-content:space-between;
+    
     a {
       color: var(--color-text-muted);
       transition: color 0.2s;

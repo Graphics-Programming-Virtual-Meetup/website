@@ -1,0 +1,10 @@
+title = "An Improved Illumination Model for Shaded Display"
+link = "https://www.cs.drexel.edu/~deb39/Classes/Papers/p343-whitted.pdf"
+categories = ["Ray Tracing/Whitted"]
+description = "This is Turner Whitted's original Ray Tracing paper"
+formats = ["paper"]
+other_tags = ["classic"]
+priority = 10
+
+[image]
+src = "assets/whitted.jpg"

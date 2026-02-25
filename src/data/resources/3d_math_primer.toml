@@ -1,0 +1,10 @@
+title = "3D Math Primer for Graphics and Game Development"
+link = "https://gamemath.com/"
+categories = ["Beginner Friendly", "Math/Gamedev"]
+description = "The book focus on cover fundamental 3D math concepts for beginners"
+formats = ["book"]
+priority = 1
+
+[image]
+src = "assets/3d_math_primer.png"
+

@@ -1,7 +1,7 @@
 title = "Dartmouth CS87 Rendering Algorithms"
 link = "https://cs87-dartmouth.github.io/"
 categories = ["Course", "Ray Tracing/Overview"]
-description = "A course for realistic image synthesis bridging the gaps of Ray Tracing in One Weekend and PBRT"
+description = "The course nicely fills the gap between a Ray Tracing in One Weekend style toy renderer and a more general and fully-fledged renderer that PBRT describes"
 formats = ["assignments", "slides"]
 languages = ["c++"]
 priority = 90

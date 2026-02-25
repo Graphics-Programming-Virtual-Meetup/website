@@ -1,0 +1,10 @@
+title = " Implementing a tiny CPU rasterizer"
+link = "https://lisyarus.github.io/blog/posts/implementing-a-tiny-cpu-rasterizer-part-1.html"
+categories = ["Rasterization/Software Rasterization"]
+description = "Blog post series on implementing a CPU rasterizer from scratch"
+formats = ["tutorial"]
+languages = ["c++"]
+priority = 1
+
+[image]
+src = "assets/tiny_cpu_rasterizer.png"

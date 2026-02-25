@@ -42,12 +42,13 @@ const filteredResources = resources.filter((resource) => {
   );
 });
 
-const displayName = category.last;
-
 const categoryEntry = await getEntry("resourceCategories", category.slug);
 const { Content } = categoryEntry
   ? await render(categoryEntry)
   : { Content: null };
+
+// If there is a title specified in the markdown file, use that. Otherwise use the last component of the category
+const displayName = categoryEntry?.data.title ?? category.last;
 ---
 
 <ResourcesLayout

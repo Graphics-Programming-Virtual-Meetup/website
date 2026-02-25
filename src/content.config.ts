@@ -43,6 +43,7 @@ const resources = defineCollection({
 const resourceCategories = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/data/resource_categories" }),
   schema: z.object({
+    title: z.string().optional(),
     priority: z.number().default(0),
   }),
 });

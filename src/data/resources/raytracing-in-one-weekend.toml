@@ -1,6 +1,6 @@
 title = "Ray Tracing in One Weekend series"
 link = "https://raytracing.github.io"
-categories = ["Beginner Friendly", "Ray Tracing/Overview"]
+categories = ["Beginner Friendly", "Ray Tracing/Overview", "Ray Tracing/Path Tracing"]
 description = "Series of online books teaching the basics of path tracing"
 formats = ["book", "tutorial"]
 languages = ["c++"]

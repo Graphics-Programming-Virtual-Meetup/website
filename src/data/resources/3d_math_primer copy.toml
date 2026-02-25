@@ -1,0 +1,7 @@
+title = "Mathematics for Computer Graphics"
+link = "https://link.springer.com/book/10.1007/978-1-4471-7550-6"
+categories = ["Math/Gamedev"]
+description = "comprehensive range of mathematical techniques and problem-solving strategies associated with computer graphics"
+formats = ["book"]
+paid = true
+priority = -1

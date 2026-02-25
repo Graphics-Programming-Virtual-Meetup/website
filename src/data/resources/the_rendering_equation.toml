@@ -1,0 +1,10 @@
+title = "The rendering equation"
+link = "https://dl.acm.org/doi/10.1145/15886.15902"
+categories = ["Ray Tracing/Path Tracing", "PBR/Light Transport", "Randomness/Monte Carlo"]
+description = "The classic Kajiya rendering equation paper introduced the \"rendering equation\" and the path tracing algorithm"
+formats = ["paper"]
+other_tags = ["classic"]
+priority = 10
+
+[image]
+src = "assets/Kajiya.jpg"

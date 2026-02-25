@@ -1,0 +1,9 @@
+title = "Ray Tracing Gems Series"
+link = "https://www.realtimerendering.com/raytracinggems/"
+categories = ["Ray Tracing/Overview"]
+description = "Like other \"gems\" books, this series of books contains a collection of articles focused on ray tracing techniques for serious practitioners. It focuses on subjects commonly considered too advanced for introductory texts, yet rarely addressed by research papers."
+formats = ["book"]
+priority = 10
+
+[image]
+src = "assets/rtg.jpg"

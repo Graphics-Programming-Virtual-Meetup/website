@@ -64,7 +64,7 @@ const displayName = categoryEntry?.data.title ?? category.last;
     {
       category.ancestors().map((c) => (
         <li>
-          <a href={`/resources/${c.slug}`}>{c.last}</a>
+          <a href={`/resources/categories/${c.slug}`}>{c.last}</a>
         </li>
       ))
     }

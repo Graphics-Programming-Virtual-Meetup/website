@@ -8,7 +8,7 @@ interface Props {
 
 const { category, currentPath } = Astro.props;
 
-const link = category ? `/resources/${category.slug}` : "/resources";
+const link = category ? `/resources/categories/${category.slug}` : "/resources";
 const isActive = category ? currentPath == category.slug : currentPath === "";
 
 const text = category ? category.last : "All Resources";

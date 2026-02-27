@@ -4,4 +4,3 @@ categories = ["Math/Gamedev"]
 description = "comprehensive range of mathematical techniques and problem-solving strategies associated with computer graphics"
 formats = ["book"]
 paid = true
-priority = -1

@@ -1,0 +1,6 @@
+title = "WebGPU Specification"
+link = "https://gpuweb.github.io/gpuweb/"
+categories = ["WebGPU"]
+description = "The official WebGPU API specification"
+formats = ["specification"]
+priority = 5

@@ -1,0 +1,8 @@
+title = "Depth Precision Visualized"
+link = "https://developer.nvidia.com/content/depth-precision-visualized"
+categories = ["Numerics/Depth", "Numerics/Floating Point"]
+description = "A visual explanation of floating-point depth buffer precision, and introduces nonlinear depth mapping"
+formats = ["article"]
+
+[image]
+src = "assets/depth_precision.jpg"

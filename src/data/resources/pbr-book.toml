@@ -1,6 +1,6 @@
 title = "Physically Based Rendering: From Theory to Implementation"
 link = "https://pbr-book.org/"
-categories = ["Ray Tracing/Overview"]
+categories = ["Ray Tracing/Overview", "PBR/Light Transport", "Randomness/Monte Carlo"]
 description = "Comprehensive reference on physically based rendering techniques"
 formats = ["book"]
 languages = ["c++"]
@@ -8,4 +8,3 @@ priority = 80
 
 [image]
 src = "assets/pbrt.jpg"
-

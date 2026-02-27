@@ -4,7 +4,7 @@ categories = ["Vulkan/Tutorials"]
 description = "The goal of this guide is to understand Vulkan correctly, and act as a stepping stone for then working in your own projects."
 formats = ["tutorial"]
 languages = ["c++"]
-priority = 50
+priority = 20
 
 [image]
 src = "assets/vkguide.png"

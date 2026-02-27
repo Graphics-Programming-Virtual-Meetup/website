@@ -1,0 +1,6 @@
+title = "Best Practices for Modern OpenGL"
+link = "https://juandiegomontoya.github.io/modern_opengl.html"
+categories = ["OpenGL"]
+description = "A guide about avoiding common programmer errors by using modern OpenGL (4.5+)"
+formats = ["article"]
+priority = 20

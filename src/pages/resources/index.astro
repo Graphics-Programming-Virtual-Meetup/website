@@ -2,10 +2,9 @@
 import { getCollection } from "astro:content";
 
 import ResourcesLayout from "@layouts/ResourcesLayout.astro";
+import { sortResources } from "@utils/resource";
 
-const resources = (await getCollection("resources")).sort(
-  (a, b) => b.data.priority - a.data.priority
-);
+const resources = sortResources(await getCollection("resources"));
 ---
 
 <ResourcesLayout

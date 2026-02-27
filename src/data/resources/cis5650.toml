@@ -1,6 +1,6 @@
 title = "UPenn CIS 5650 GPU Programming and Architecture (2025)"
 link = "https://cis5650-fall-2025.github.io/"
-categories = ["Course", "CUDA", "GPGPU"]
+categories = ["Course", "CUDA", "GPU Compute"]
 description = "A course that introduce GPU parallel programming with a Computer Graphics flavor"
 formats = ["video", "assignments", "slides"]
 languages = ["c++"]

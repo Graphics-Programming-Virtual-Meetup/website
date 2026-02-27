@@ -1,0 +1,6 @@
+title = "Vulkan Specification"
+link = "https://docs.vulkan.org/spec/latest/"
+categories = ["Vulkan"]
+description = " It is a good idea to keep it open while doing Vulkan programming"
+formats = ["specification"]
+priority = 30

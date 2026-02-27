@@ -1,0 +1,7 @@
+title = "3D Graphics Rendering Cookbook"
+link = "https://www.amazon.com/Graphics-Rendering-Cookbook-comprehensive-algorithms/dp/1838986197"
+description = "A book that covers and compares both the OpenGL and Vulkan APIs, while also covering various recipes about making a renderer."
+categories = ["Vulkan/Tutorials", "OpenGL"]
+formats = ["book"]
+languages = ["c++"]
+paid = true

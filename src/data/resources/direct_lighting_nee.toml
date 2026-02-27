@@ -1,0 +1,8 @@
+title = "What is direct lighting (next event estimation) in a ray tracer?"
+link = "https://psgraphics.blogspot.com/2022/01/what-is-direct-lighting-next-event.html"
+categories = ["Ray Tracing/Next Event Estimation", "Randomness/Variance Reduction/Importance Sampling"]
+description = "An explanation of direct lighting and next event estimation in ray tracers"
+formats = ["article"]
+
+[image]
+src = "assets/ps_nee.png"

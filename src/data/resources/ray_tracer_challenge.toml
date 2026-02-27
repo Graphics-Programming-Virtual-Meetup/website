@@ -4,7 +4,6 @@ categories = ["Beginner Friendly", "Ray Tracing/Whitted"]
 description = "This book challenges you to build a Whitted-style ray tracer from scratch. Unlike many tutorials, it doesn't provide code and follows a unique test-first approach, describing only test specifications and algorithms."
 formats = ["book"]
 paid = true
-priority = -1
 
 [image]
 src = "assets/ray-tracer-challenge.jpg"

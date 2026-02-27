@@ -1,0 +1,10 @@
+title = "TU Wien: Vulkan Lecture Series (2021)"
+link = "https://www.youtube.com/playlist?list=PLmIqTlJ6KsE1Jx5HV4sd2jOe3V1KMHHgn"
+categories = ["Course", "Vulkan/Tutorials"]
+description = "Lecture series on Vulkan programming from TU Wien"
+formats = ["video", "slides"]
+priority = 10
+languages = ["c++"]
+
+[image]
+src = "assets/tu_wien_vulkan.jpg"

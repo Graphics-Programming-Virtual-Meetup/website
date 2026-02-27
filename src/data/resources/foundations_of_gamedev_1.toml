@@ -3,5 +3,4 @@ link = "https://foundationsofgameenginedev.com/"
 categories = ["Math/Gamedev", "Math/Geometric algebra"]
 description = "Introduces math routines with implementations. It also touches Grassman algebra"
 formats = ["book"]
-priority = -1
 paid = true

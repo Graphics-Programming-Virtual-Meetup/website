@@ -3,6 +3,7 @@ import { getCollection, getEntry, render } from "astro:content";
 
 import { ResourceCategory } from "@utils/resourceCategory";
 import ResourcesLayout from "@layouts/ResourcesLayout.astro";
+import { sortResources } from "@utils/resource";
 
 export async function getStaticPaths() {
   const resources = await getCollection("resources");
@@ -31,9 +32,7 @@ interface Props {
 }
 
 const { category } = Astro.props;
-const resources = (await getCollection("resources")).sort(
-  (a, b) => b.data.priority - a.data.priority
-);
+const resources = sortResources(await getCollection("resources"));
 
 // Filter resources that match this category or are under it
 const filteredResources = resources.filter((resource) => {

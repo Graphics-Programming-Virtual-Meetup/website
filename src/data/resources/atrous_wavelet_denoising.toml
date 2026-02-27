@@ -1,0 +1,9 @@
+title = "Edge-Avoiding À-Trous Wavelet Transform for fast Global Illumination Filtering (2010)"
+link = "https://jo.dreggn.org/home/2010_atrous.pdf"
+categories = ["Randomness/Denoising", "Ray Tracing"]
+description = "Classic paper introducing a fast and simple filter for ray tracing denoising."
+formats = ["paper"]
+other_tags = ["classic"]
+
+[image]
+src = "assets/atrous.png"

@@ -1,0 +1,6 @@
+title = "docs.gl"
+link = "http://docs.gl/"
+categories = ["OpenGL"]
+description = "An improvement of the official OpenGL documentation"
+formats = ["specification"]
+priority = 10

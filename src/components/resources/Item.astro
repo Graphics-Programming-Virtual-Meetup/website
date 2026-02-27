@@ -46,7 +46,7 @@ const visibleCategories = categories
             </li>
           ))
         }
-        {formats.map((f) => <li data-variant="format">{f}</li>)}
+        {formats?.map((f) => <li data-variant="format">{f}</li>)}
         {languages?.map((t) => <li data-variant="language">{t}</li>)}
         {otherTags?.map((t) => <li data-variant="other">{t}</li>)}
       </ul>

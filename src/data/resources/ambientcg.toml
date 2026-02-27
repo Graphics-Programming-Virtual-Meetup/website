@@ -1,0 +1,8 @@
+title = "ambientCG"
+link = "https://ambientcg.com/"
+categories = ["Assets/Materials"]
+description = "Public Domain materials for Physically Based Rendering"
+formats = ["list"]
+
+[image]
+src = "assets/ambientCG.jpg"

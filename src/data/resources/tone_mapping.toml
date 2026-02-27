@@ -1,0 +1,6 @@
+title = "Tone Mapping"
+link = "https://64.github.io/tonemapping/"
+categories = ["Color/Tone Mapping"]
+description = "Introduces the theory of tone mapping and discusses commonly used tone mapping operators"
+formats = ["article"]
+priority = 1

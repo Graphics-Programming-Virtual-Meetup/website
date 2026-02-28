@@ -36,10 +36,16 @@ const { title, description, allResources, resources, currentPath } =
 
 <style>
   .resources-layout {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex: 1;
+  }
+
+  @media (min-width: 1200px) {
+    .resources-layout {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
   }
 </style>

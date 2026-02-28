@@ -1,0 +1,125 @@
+---
+import type { ResourceCategory } from "@utils/resourceCategory";
+import CategorySidebarLink from "./CategorySidebarLink.astro";
+
+/*
+ * Subtree for a category (including the category itself and all its children).
+ * The subtree is collapsable.
+ */
+interface CategoryNode {
+  category: ResourceCategory;
+  children: CategoryNode[];
+}
+
+interface Props {
+  category: ResourceCategory;
+  children: CategoryNode[];
+  currentPath: string;
+}
+
+const { children, category, currentPath } = Astro.props;
+
+// Show children by default when the currentPath is either this category or a child of this category
+const showChildren = currentPath.startsWith(category.slug);
+
+const categoryToggleId = `category-toggle-${category.slug}`;
+---
+
+<div class="category-row">
+  {
+    children.length > 0 ? (
+      <>
+        <input type="checkbox" id={categoryToggleId} checked={showChildren} />
+        <label for={categoryToggleId} class="caret">
+          <svg viewBox="0 0 6 10" fill="none">
+            <path
+              d="M1 1l4 4-4 4"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </label>
+      </>
+    ) : (
+      <span class="category-toggle-stub" />
+    )
+  }
+
+  <CategorySidebarLink category={category} currentPath={currentPath} />
+</div>
+
+{
+  children.length > 0 && (
+    <ul class="list-style-none category-children">
+      {children.map(({ category: child, children: grandchildren }) => (
+        <li>
+          <Astro.self
+            category={child}
+            children={grandchildren}
+            currentPath={currentPath}
+          />
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+<style>
+  & .category-row {
+    --category-toggle-size: 0.8em;
+
+    input {
+      display: none;
+    }
+
+    .category-toggle-stub {
+      width: var(--category-toggle-size);
+    }
+
+    display: flex;
+    align-items: center;
+    gap: 0.1em;
+
+    & .caret {
+      cursor: pointer;
+      flex-shrink: 0;
+      width: var(--category-toggle-size);
+      height: var(--category-toggle-size);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition:
+        transform 0.1s ease,
+        color 0.15s;
+
+      color: var(--color-ui-muted);
+
+      &:hover,
+      &:active {
+        color: var(--color-ui-active);
+      }
+
+      input:checked + & {
+        color: var(--color-ui-active);
+        transform: rotate(90deg);
+      }
+
+      & svg {
+        width: 10px;
+        height: 10px;
+        display: block;
+      }
+    }
+  }
+
+  .category-children {
+    display: none;
+    padding-left: var(--space-xs);
+
+    div.category-row:has(input:checked) ~ & {
+      display: block;
+    }
+  }
+</style>

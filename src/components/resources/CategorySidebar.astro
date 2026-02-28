@@ -4,6 +4,7 @@ import type { CollectionEntry } from "astro:content";
 import { ResourceCategory } from "@utils/resourceCategory";
 import CategorySidebarLink from "./CategorySidebarLink.astro";
 import { getCollection } from "astro:content";
+import CategorySidebarSubtree from "./CategorySidebarSubtree.astro";
 
 interface CategoryNode {
   category: ResourceCategory;
@@ -109,38 +110,11 @@ const categories = buildCategoryTree(
       {
         categories.map(({ category, children }) => (
           <li>
-            <CategorySidebarLink
+            <CategorySidebarSubtree
               category={category}
+              children={children}
               currentPath={currentPath}
             />
-
-            {children.length > 0 && (
-              <ul class="list-style-none category-children">
-                {children.map(
-                  ({ category: child, children: grandchildren }) => (
-                    <li>
-                      <CategorySidebarLink
-                        category={child}
-                        currentPath={currentPath}
-                      />
-
-                      {grandchildren.length > 0 && (
-                        <ul class="list-style-none category-children">
-                          {grandchildren.map(({ category: grandchild }) => (
-                            <li>
-                              <CategorySidebarLink
-                                category={grandchild}
-                                currentPath={currentPath}
-                              />
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </li>
-                  )
-                )}
-              </ul>
-            )}
           </li>
         ))
       }
@@ -212,15 +186,13 @@ const categories = buildCategoryTree(
       border: 1px solid var(--color-border);
       border-radius: 6px;
       background-color: var(--color-bg);
+
+      min-width: 22ch;
     }
 
     h2 {
       font-size: 1rem;
       margin-bottom: var(--space-sm);
-    }
-
-    .category-children {
-      padding-left: var(--space-sm);
     }
   }
 

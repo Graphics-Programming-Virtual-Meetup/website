@@ -1,0 +1,11 @@
+title = "Instanced Line Rendering Part I"
+categories = ["Graphics Effects/Line/Triangulated line"]
+link = "https://wwwtyro.net/2019/11/18/instanced-lines.html"
+description = "Builds on the foundation from \"Drawing Lines is Hard\" and uses instance rendering to draw lines"
+formats = ["article"]
+languages = ["GLSL", "JavaScript"]
+priority = 2
+
+
+[image]
+src = "assets/instance_line_rendering.png"

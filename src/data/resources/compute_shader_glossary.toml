@@ -1,5 +1,5 @@
 title = "Compute Shader Glossary"
-categories = ["GPU Compute", "CUDA", "DX12/Compute", "Vulkan/Compute", "Metal/Compute", "WebGPU/Compute"]
+categories = ["GPU Compute/Overview", "CUDA", "DX12/Compute", "Vulkan/Compute", "Metal/Compute", "WebGPU/Compute"]
 link = "https://github.com/googlefonts/compute-shader-101/blob/main/docs/glossary.md"
 description = "A glossary of terms used in compute shader programming. Provides cross-API comparisons"
 formats = ["article"]

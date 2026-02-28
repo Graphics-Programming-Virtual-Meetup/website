@@ -1,0 +1,10 @@
+title = "Drawing Lines is Hard"
+categories = ["Graphics Effects/Line/Triangulated line"]
+link = "https://mattdesl.svbtle.com/drawing-lines-is-hard"
+description = "Summarizes the problem of GPU line primitives and explores a few different techniques for 2D and 3D triangulated line rendering, and accompany each with a small canvas demo."
+formats = ["article"]
+languages = ["GLSL"]
+priority = 10
+
+[image]
+src = "assets/drawing_lines_is_hard.png"

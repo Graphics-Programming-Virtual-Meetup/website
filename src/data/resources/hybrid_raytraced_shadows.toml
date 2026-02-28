@@ -1,0 +1,8 @@
+title = "Experiments in Hybrid Raytraced Shadows"
+categories = ["Ray Tracing/Hybrid Rendering", "Graphics Effects/Shadows/Raytraced"]
+link = "https://interplayoflight.wordpress.com/2021/05/15/experiments-in-hybrid-raytraced-shadows/"
+description = "Explores combining rasterization and ray tracing for shadow rendering"
+formats = ["article"]
+
+[image]
+src = "assets/hybrid_raytraced_shadows.webp"

@@ -1,0 +1,9 @@
+title = "Learn OpenGL guest article: Cascaded Shadow Mapping"
+link = "https://learnopengl.com/Guest-Articles/2021/CSM"
+categories = ["Graphics Effects/Shadows/Shadow Mapping"]
+description = "Learn OpenGL guest article on cascaded shadow mapping, which resolves the resolution issues of the naive shadow mapping"
+formats = ["article"]
+languages = ["GLSL"]
+
+[image]
+src = "assets/learnopengl_csm.png"

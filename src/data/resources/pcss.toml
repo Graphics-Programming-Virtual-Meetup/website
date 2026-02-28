@@ -1,0 +1,8 @@
+title = "Percentage-Closer Soft Shadows"
+link = "https://developer.download.nvidia.com/shaderlibrary/docs/shadow_PCSS.pdf"
+categories = ["Graphics Effects/Shadows/Shadow Mapping"]
+description = "NVIDIA paper introducing Percentage-Closer Soft Shadows (PCSS), based on shadow mapping and percentage‐closer filtering (PCF)"
+formats = ["paper"]
+
+[image]
+src = "assets/PCSS.jpg"

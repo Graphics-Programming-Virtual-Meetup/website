@@ -1,0 +1,6 @@
+title = "Parallel Prefix Sum (Scan) with CUDA (2007)"
+categories = ["CUDA", "GPU Compute/Parallel Algorithms"]
+link = "http://www.eecs.umich.edu/courses/eecs570/hw/parprefix.pdf"
+description = "A classic reference on implementing a work-efficient parallel prefix sum algorithms"
+formats = ["paper"]
+other_tags = ["classic"]

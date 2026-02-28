@@ -30,7 +30,7 @@ const resources = defineCollection({
             z.literal("tutorial"),
             z.literal("video"),
           ])
-        ).optional(),
+        ),
         languages: z.array(z.string()).optional(),
         other_tags: z.array(z.string()).optional(),
         paid: z.boolean().default(false),

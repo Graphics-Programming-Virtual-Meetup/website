@@ -1,0 +1,7 @@
+title = "Instanced Line Rendering Part II: Alpha blending"
+categories = ["Graphics Effects/Line/Triangulated line"]
+link = "https://wwwtyro.net/2021/10/01/instanced-lines-part-2.html"
+description = "Continues instanced line rendering, introducing alpha-blending for triangulated lines."
+formats = ["article"]
+languages = ["GLSL", "JavaScript"]
+priority = 1

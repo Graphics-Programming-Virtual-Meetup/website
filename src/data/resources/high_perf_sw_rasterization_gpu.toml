@@ -1,0 +1,5 @@
+title = "High-Performance Software Rasterization on GPUs (2011)"
+categories = ["Rasterization/Software Rasterization", "GPU Compute/Applications"]
+link = "https://users.aalto.fi/~laines9/publications/laine2011hpg_paper.pdf"
+description = "A paper describing high-performance software rasterization techniques running on GPUs."
+formats = ["paper"]

@@ -1,0 +1,10 @@
+title = "Learn OpenGL: Shadow Mapping"
+link = "https://learnopengl.com/Guest-Articles/2021/CSM"
+categories = ["Graphics Effects/Shadows/Shadow Mapping"]
+description = "Basic tutorial on shadow mapping"
+formats = ["tutorial"]
+languages = ["c++", "GLSL"]
+priority = 10
+
+[image]
+src = "assets/shadow_mapping_theory.png"

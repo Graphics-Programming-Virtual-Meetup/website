@@ -49,22 +49,33 @@ function buildCategoryTree(
     }
   }
 
+  const compareNode = (a: CategoryNode, b: CategoryNode) => {
+    // Sort by priority. If priority is the same, sort alphabetically
+    const aPriority = categoryPriority.get(a.category.slug) ?? 0;
+    const bPriority = categoryPriority.get(b.category.slug) ?? 0;
+
+    if (aPriority < bPriority) {
+      return 1;
+    } else if (aPriority > bPriority) {
+      return -1;
+    }
+
+    return a.category.last.localeCompare(b.category.last);
+  };
+
   // Return only top-level categories
-  return Array.from(categoryMap.values())
+  const result = Array.from(categoryMap.values())
     .filter((cat) => !cat.category.slug.includes("/"))
-    .sort((a, b) => {
-      // Sort by priority. If priority is the same, sort alphabetically
-      const aPriority = categoryPriority.get(a.category.slug) ?? 0;
-      const bPriority = categoryPriority.get(b.category.slug) ?? 0;
+    .sort(compareNode);
 
-      if (aPriority < bPriority) {
-        return 1;
-      } else if (aPriority > bPriority) {
-        return -1;
-      }
+  // recursively sort all childrens
+  function sortChildren(node: CategoryNode) {
+    node.children.sort(compareNode);
+    node.children.forEach(sortChildren);
+  }
+  result.forEach(sortChildren);
 
-      return a.category.last.localeCompare(b.category.last);
-    });
+  return result;
 }
 
 interface Props {

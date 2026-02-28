@@ -1,9 +1,9 @@
 title = "Learn wgpu"
 link = "https://sotrh.github.io/learn-wgpu/"
-categories = ["WebGPU"]
+categories = ["WebGPU/Tutorial"]
 description = "A tutorial for the WebGPU API using Rust and the wgpu library"
 formats = ["tutorial"]
-languages = ["rust", "wgsl"]
+languages = ["rust", "WGSL"]
 priority = 10
 
 [image]

@@ -1,0 +1,9 @@
+title = "Lecture 18: Monte Carlo Rendering (CMU 15-462/662)"
+link = "https://youtu.be/FUZJNlRqrAc"
+categories = ["Randomness/Monte Carlo", "Ray Tracing/Path Tracing"]
+description = "An introduction to Monte Carlo ray tracing"
+formats = ["video"]
+priority = 10
+
+[image]
+src = "assets/15462-18.jpg"

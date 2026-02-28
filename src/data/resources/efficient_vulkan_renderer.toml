@@ -1,0 +1,5 @@
+title = "Arseny Kapoulkine: Writing an efficient Vulkan renderer (2020)"
+categories = ["Vulkan/Best Practices", "Performance/API usage"]
+link = "https://zeux.io/2020/02/27/writing-an-efficient-vulkan-renderer/"
+description = "Best practices for writing a high-performance Vulkan renderer"
+formats = ["article"]

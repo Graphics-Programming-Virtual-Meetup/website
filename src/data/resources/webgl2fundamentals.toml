@@ -3,5 +3,5 @@ link = "https://sotrh.github.io/learn-wgpu/"
 categories = ["WebGL"]
 description = "An introduction to 2D and 3D computer graphics using WebGL2 by Gregg Tavares"
 formats = ["tutorial"]
-languages = ["glsl", "javascript"]
+languages = ["GLSL", "javascript"]
 priority = 10

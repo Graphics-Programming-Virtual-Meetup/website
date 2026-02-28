@@ -36,7 +36,7 @@ alt = "a smiling textured container in OpenGL"
 
 ### Optional fields
 
-- `languages`: Programming languages used (e.g. `["c++", "glsl"]`)
+- `languages`: Programming languages used (e.g. `["c++", "GLSL"]`)
 - `other_tags`: Any extra tags that don't fit elsewhere. Useful if you want to add a tag to a resource, but don't want the tag to be displayed on the category sidebar.
 - `paid`: Set to `true` if the resource costs money. Defaults to `false`
 - `priority`: Resource with higher numbers appear earlier in listings. Defaults to `0`

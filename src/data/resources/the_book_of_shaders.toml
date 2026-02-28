@@ -3,7 +3,7 @@ link = "https://thebookofshaders.com/"
 categories = ["Beginner Friendly", "Shader", "Art"]
 description = " The author introduces shaders from an artistic perspective, and the book covers many topics that more engineering-focused resources such as \"Learn OpenGL\" won't cover."
 formats = ["book"]
-language = ["glsl"]
+language = ["GLSL"]
 
 [image]
 src = "assets/thebookofshaders.png"

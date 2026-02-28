@@ -3,7 +3,7 @@ link = "http://john-chapman-graphics.blogspot.com/2013/01/ssao-tutorial.html"
 categories = ["Graphics Effects/SSAO"]
 description = "A tutorial on implementing SSAO"
 formats = ["article"]
-language = ["glsl"]
+language = ["GLSL"]
 
 [image]
 src = "assets/john_chapman_ssao.jpg"

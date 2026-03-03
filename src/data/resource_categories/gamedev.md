@@ -1,3 +1,5 @@
-Resources related to building a game or an game engine
+---
+related: ["math/gamedev"]
+---
 
-Related: [Gamedev Math](/resources/categories/math/gamedev)
+Resources related to building a game or an game engine

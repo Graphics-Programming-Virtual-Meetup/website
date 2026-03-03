@@ -47,6 +47,7 @@ const resourceCategories = defineCollection({
   schema: z.object({
     title: z.string().optional(),
     priority: z.number().default(0),
+    related: z.array(z.string()).optional(),
   }),
 });
 

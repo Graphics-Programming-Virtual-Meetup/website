@@ -4,11 +4,12 @@ import { getCollection, getEntry, render } from "astro:content";
 import { ResourceCategory } from "@utils/resourceCategory";
 import ResourcesLayout from "@layouts/ResourcesLayout.astro";
 import { sortResources } from "@utils/resource";
+import { undefined } from "astro:schema";
 
 export async function getStaticPaths() {
   const resources = await getCollection("resources");
 
-  const categoryByPath = new Map<string, ResourceCategory>();
+  const categoryBySlug = new Map<string, ResourceCategory>();
 
   // Collect all unique categories
   for (const resource of resources) {
@@ -16,22 +17,23 @@ export async function getStaticPaths() {
       const ancestorsAndSelf =
         ResourceCategory.fromString(resourceCategory).ancestorsAndSelf();
       for (const category of ancestorsAndSelf) {
-        categoryByPath.set(category.slug, category);
+        categoryBySlug.set(category.slug, category);
       }
     }
   }
 
-  return Array.from(categoryByPath).map(([path, category]) => ({
+  return Array.from(categoryBySlug).map(([path, category]) => ({
     params: { category: path },
-    props: { category },
+    props: { category, categoryBySlug },
   }));
 }
 
 interface Props {
   category: ResourceCategory;
+  categoryBySlug: Map<string, ResourceCategory>;
 }
 
-const { category } = Astro.props;
+const { category, categoryBySlug } = Astro.props;
 const resources = sortResources(await getCollection("resources"));
 
 // Filter resources that match this category or are under it
@@ -48,6 +50,22 @@ const { Content } = categoryEntry
 
 // If there is a title specified in the markdown file, use that. Otherwise use the last component of the category
 const displayName = categoryEntry?.data.title ?? category.last;
+
+const related = await Promise.all(
+  categoryEntry?.data.related?.map(async (categorySlug) => {
+    const category = categoryBySlug.get(categorySlug);
+    if (!category) {
+      throw new Error(
+        `Related category with the following slug doesn't exist: ${categorySlug}`
+      );
+    }
+
+    const entry = await getEntry("resourceCategories", categorySlug);
+    const name = entry?.data.title ?? category.last;
+
+    return { slug: categorySlug, name };
+  }) ?? []
+);
 ---
 
 <ResourcesLayout
@@ -71,6 +89,21 @@ const displayName = categoryEntry?.data.title ?? category.last;
   </ul>
 
   {Content && <Content />}
+
+  {
+    related.length > 0 && (
+      <aside class="admonition">
+        <p>Related:</p>
+        <ul>
+          {related.map(({ slug, name }) => (
+            <li>
+              <a href={`/resources/categories/${slug}`}>{name}</a>
+            </li>
+          ))}
+        </ul>
+      </aside>
+    )
+  }
 </ResourcesLayout>
 
 <style>
@@ -90,5 +123,9 @@ const displayName = categoryEntry?.data.title ?? category.last;
         margin: 0 var(--space-xs);
       }
     }
+  }
+
+  .admonition {
+    margin: 1em 0;
   }
 </style>

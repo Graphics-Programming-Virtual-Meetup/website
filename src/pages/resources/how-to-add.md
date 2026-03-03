@@ -73,6 +73,7 @@ The markdown file has the following format:
 ---
 title: "category title"
 priority: 100
+related: ["a", "list", "of", "related", "categories"]
 ---
 
 Description text
@@ -82,3 +83,4 @@ All the frontmatter attributes are optional.
 
 - `title`: By default, a category uses its last component as a title. For example, "Ray Tracing/Path Tracing" will have "Path Tracing" as the title. In some cases, this doesn't work well, for example, "Ray Tracing/API" will have "API" as a title. In this case, you can provide an alternative title.
 - `priority`: Categories with higher numbers appear earlier in the category sidebar. Defaults to `0`
+- `related`: Related categories specified with their slugs. E.g. `"ray-tracing/api"`

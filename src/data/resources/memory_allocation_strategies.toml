@@ -1,0 +1,9 @@
+title = "Memory allocation strategies article series"
+link = "https://www.gingerbill.org/series/memory-allocation-strategies/"
+categories = ["System Programming/Memory Management"]
+description = "A series of articles talking about custom memory allocators, starting from the simple arena allocators, to more complicated ones like the stack allocators, pool allocators, free list allocators, and finally buddy allocators."
+formats = ["article"]
+language = ["c"]
+
+[image]
+src = "assets/virtual_memory.svg"

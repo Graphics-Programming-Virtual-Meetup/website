@@ -1,0 +1,10 @@
+title = "Game Loop - Game Programming Patterns"
+link = "http://gameprogrammingpatterns.com/game-loop.html"
+categories = ["Gamedev/Game Loop", "Physical Simulation/Stability"]
+description = "Chapter from Game Programming Patterns explaining different design decisions for a game loop"
+formats = ["article"]
+priority = 1
+language = ["c++"]
+
+[image]
+src = "assets/game-loop-fixed.png"

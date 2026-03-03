@@ -1,0 +1,6 @@
+title = "Real-time Collision Detection (2005)"
+link = "https://realtimecollisiondetection.net"
+categories = ["Physical Simulation/Collision"]
+description = "A good reference book on collision detection, collision response, and various acceleration data structures."
+formats = ["book"]
+paid = true

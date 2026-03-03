@@ -1,0 +1,5 @@
+title = "Algorithms for Modern Hardware"
+link = "https://en.algorithmica.org/hpc/"
+categories = ["System Programming/Performance"]
+description = "Free online book focusing on high-performance computing on CPU"
+formats = ["book"]

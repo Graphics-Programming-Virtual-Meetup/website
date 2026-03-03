@@ -1,0 +1,5 @@
+title = "Fix Your Timestep! (2004)"
+link = "https://gafferongames.com/post/fix_your_timestep/"
+categories = ["Gamedev/Game Loop", "Physical Simulation/Stability"]
+description = "Classic article on implementing a fixed timestep game loop for stable physics simulation."
+formats = ["article"]

@@ -1,0 +1,7 @@
+title = "WebGPU Fundamentals"
+link = "https://webgpufundamentals.org/"
+categories = ["WebGPU/Tutorial"]
+description = "A series of lessons or tutorials about webgpu"
+formats = ["tutorial"]
+languages = ["GLSL", "javascript"]
+priority = 10

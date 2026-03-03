@@ -1,0 +1,5 @@
+title = "Data-Oriented Design"
+link = "https://www.dataorienteddesign.com/site.php"
+categories = ["System Programming/Data-oriented design"]
+description = "This book is a fabulous read to get a deeper understanding of what data-oriented design is about. It goes beyond the often-mentioned cache misses, SOA, ECS, or anti-OOP rants."
+formats = ["book"]

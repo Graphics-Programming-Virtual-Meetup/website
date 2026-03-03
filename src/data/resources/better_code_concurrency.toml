@@ -1,0 +1,6 @@
+title = "Better Code: Concurrency - Sean Parent"
+link = "https://www.youtube.com/watch?v=zULU6Hhp42w"
+categories = ["System Programming/CPU Concurrency"]
+description = "This talk uses the primitives supplied by C++14 to build a simple task system. It discussing the issues with usage of mutexes for shared data and introducing concurrent queues and thread pools"
+formats = ["video"]
+languages = ["c++"]

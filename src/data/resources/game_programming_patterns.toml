@@ -1,0 +1,10 @@
+title = "Game Programming Patterns"
+link = "http://gameprogrammingpatterns.com/"
+categories = ["Gamedev/Overview"]
+description = "A free online book covering design patterns commonly used in game development"
+formats = ["book"]
+priority = 10
+language = ["c++"]
+
+[image]
+src = "assets/gpp.jpg"

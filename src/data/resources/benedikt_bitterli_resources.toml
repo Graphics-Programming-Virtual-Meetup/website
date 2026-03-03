@@ -1,0 +1,5 @@
+title = "Rendering Resources | Benedikt Bitterli"
+link = "https://benedikt-bitterli.me/resources/"
+categories = ["Assets/Models", "Assets/Scenes"]
+description = "Scenes in Tungsten, Mitsuba, and pbrt-v4 formats"
+formats = ["list"]

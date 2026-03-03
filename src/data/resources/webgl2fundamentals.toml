@@ -1,7 +1,7 @@
 title = "WebGL2 Fundamentals "
-link = "https://sotrh.github.io/learn-wgpu/"
+link = "https://webgl2fundamentals.org/"
 categories = ["WebGL"]
-description = "An introduction to 2D and 3D computer graphics using WebGL2 by Gregg Tavares"
+description = "An introduction to 2D and 3D computer graphics using WebGL2"
 formats = ["tutorial"]
 languages = ["GLSL", "javascript"]
 priority = 10

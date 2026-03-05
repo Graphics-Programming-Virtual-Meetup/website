@@ -1,0 +1,11 @@
+title = "Polygonising a scalar field (Marching Cubes) (1994)"
+link = "http://paulbourke.net/geometry/polygonise/"
+categories = ["Volumetric/Isosurface Extraction", "Geometry/Mesh Generation", "Voxel/Meshing"]
+description = "Reference implementation and explanation of the marching cubes algorithm"
+language = ["c"]
+formats = ["article"]
+other_tags = ["classic"]
+priority = 1
+
+[image]
+src = "assets/polygonise4.gif"

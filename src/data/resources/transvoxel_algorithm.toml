@@ -1,0 +1,8 @@
+title = "The Transvoxel Algorithm"
+link = "https://transvoxel.org/"
+categories = ["Volumetric/Isosurface Extraction", "Geometry/Mesh Generation", "Voxel/Meshing", "Graphics Effects/Terrain"]
+description = "Eric Lengyel's voxel meshing algorithm for seamlessly stitching together neighboring triangle meshes generated from voxel data at differing resolutions so that level of detail."
+formats = ["article", "paper"]
+
+[image]
+src = "assets/Transvoxel.png"

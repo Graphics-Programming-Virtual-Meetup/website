@@ -1,0 +1,9 @@
+title = " Destiny's Multithreaded Rendering Architecture (GDC 2015)"
+link = "https://www.youtube.com/watch?v=0nTDFLMLX9k"
+categories = ["System Programming/CPU Concurrency", "System Programming/Performance"]
+description = "Talks about the design and multithreaded renderer architecture for the game Destiny"
+formats = ["video"]
+languages = ["c++"]
+
+[image]
+src = "assets/destiny_multithreaded_rendering_architecture.jpg"

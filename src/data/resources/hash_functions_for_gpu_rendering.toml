@@ -1,0 +1,8 @@
+title = "Hash Functions for GPU Rendering (2020)"
+link = "https://jcgt.org/published/0009/03/02/"
+categories = ["Randomness/PRNG"]
+description = "This paper analyze the hash functions to make recommendations on which hash functions offer the best quality/speed trade-off for the range of needs, from high-performance/low-quality to high-quality/low-performance. It also present a new class of hash tuned for multidimensional input and output that performs well at the high-quality end of this spectrum."
+formats = ["article"]
+
+[image]
+src = "assets/hash_functions_for_gpu_rendering.png"

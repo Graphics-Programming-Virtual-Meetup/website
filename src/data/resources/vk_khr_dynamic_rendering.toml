@@ -1,6 +1,6 @@
 title = "VK_KHR_dynamic_rendering tutorial"
 link = "https://lesleylai.info/en/vk-khr-dynamic-rendering/"
-categories = ["Course", "Vulkan/Dynamic Rendering"]
+categories = ["Vulkan/Dynamic Rendering"]
 description = "This tutorial shows how to use the VK_KHR_dynamic_rendering extension in Vulkan. It shows the steps required to load the extension, use it, and how it affects related components such as pipeline creation"
 formats = ["article"]
 languages = ["c++"]

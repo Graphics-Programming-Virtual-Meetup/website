@@ -1,0 +1,6 @@
+title = "Graphics Programming weekly newsletter"
+link = "https://www.jendrikillner.com/index.html#newsletter"
+categories = ["Meta"]
+description = "A long-running weekly newsletter summarizing graphics-related articles from the past week"
+formats = ["list"]
+priority = 100

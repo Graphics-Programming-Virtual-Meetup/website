@@ -3,7 +3,7 @@ link = "https://www.youtube.com/watch?v=HePDHsp8spU"
 categories = ["Geometry/Data Structures"]
 description = "Great overview, and also spend significant time on the half-edge data structure"
 formats = ["video"]
-
+priority = 5
 [image]
 src = "assets/15462-10.jpg"
 

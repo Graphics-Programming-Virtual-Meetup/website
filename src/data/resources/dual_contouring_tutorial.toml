@@ -1,0 +1,8 @@
+title = "Dual Contouring Tutorial"
+link = "https://www.boristhebrave.com/2018/04/15/dual-contouring-tutorial/"
+categories = ["Volumetric/Isosurface Extraction", "Geometry/Mesh Generation", "Voxel/Meshing"]
+description = "A tutorial explaining the dual contouring algorithm"
+formats = ["article", "tutorial"]
+
+[image]
+src = "assets/dc_tee_comparison.svg"

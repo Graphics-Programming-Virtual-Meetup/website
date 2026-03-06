@@ -1,0 +1,5 @@
+title = "Let's remove Quaternions from every 3D Engine"
+link = "https://marctenbosch.com/quaternions/"
+categories = ["Math/Geometric algebra"]
+description = "Introduces rotors in Geometric Algebra as an alternative to quaternions for 3D rotations."
+formats = ["article"]

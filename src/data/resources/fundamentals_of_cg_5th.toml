@@ -1,0 +1,9 @@
+title = "Fundamentals of Computer Graphics, 5th Edition"
+link = "https://www.cs.cornell.edu/~srm/fcg5/"
+categories = ["Overview"]
+description = "Focusing on geometric intuition, the book gives the necessary information for understanding how images get onto the screen by using the complementary approaches of ray tracing and rasterization"
+formats = ["book"]
+paid = true
+
+[image]
+src = "assets/fcg5-cover-image.jpg"

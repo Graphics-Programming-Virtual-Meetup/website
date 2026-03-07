@@ -23,8 +23,11 @@ Below is the rough folder structure of the repository
 /
 ├── public/ # assets not require preprocessing (e.g. favicon)
 ├── src
-│   ├── layouts # Defines UI structures shared by one or more pages
-│   ├── pages # Pages routes
-│   └── styles # Global CSS styles
+│   ├── components # reusable UI components
+│   ├── data       # data files. Mostly for graphics programming resources
+│   ├── layouts    # Defines UI structures shared by one or more pages
+│   ├── pages      # Pages routes
+│   ├── styles     # Global CSS styles
+│   └── utils      # utility scripts
 └── package.json
 ```

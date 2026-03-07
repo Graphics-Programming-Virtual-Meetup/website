@@ -1,0 +1,8 @@
+title = "Using Blue Noise For Raytraced Soft Shadows"
+link = "https://blog.demofox.org/2020/05/16/using-blue-noise-for-raytraced-soft-shadows/"
+categories = ["Ray Tracing", "Graphics Effects/Shadows/Raytraced", "Randomness/Noise/Blue Noise"]
+description = "Article from the \"blue noise guy\" talking about how to apply blue noise to raytraced soft shadows"
+formats = ["article"]
+
+[image]
+src = "assets/Blue_noise_raytraced_shadows.webp"

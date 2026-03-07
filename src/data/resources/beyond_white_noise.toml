@@ -1,0 +1,9 @@
+title = "Beyond White Noise for Real-Time Rendering"
+link = "https://www.youtube.com/watch?v=tethAU66xaA"
+categories = ["Randomness/Noise/Blue Noise", "Math/Signal Processing"]
+description = "A good introduction on the use of different types of noise for random number generation, focusing on applications in real time rendering"
+formats = ["video"]
+priority = 5
+
+[image]
+src = "assets/beyond_white_noise.jpg"

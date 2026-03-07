@@ -1,0 +1,9 @@
+title = "McGuire Computer Graphics Archive"
+link = "http://casual-effects.com/data/index.html"
+categories = ["Assets/Models", "Assets/Scenes"]
+description = "A collection of 3D scenes and models in OBJ format for research and testing."
+formats = ["list"]
+other_tags = ["obj"]
+
+[image]
+src = "assets/mcguire_computer_graphics_archive.png"

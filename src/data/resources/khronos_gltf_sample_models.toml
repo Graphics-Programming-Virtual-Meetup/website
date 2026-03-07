@@ -1,0 +1,6 @@
+title = "KhronosGroup glTF Sample Assets"
+link = "https://github.com/KhronosGroup/glTF-Sample-Assets"
+categories = ["Assets/Models", "Assets/Scenes"]
+description = "A collection of glTF sample models from Khronos for testing glTF implementations."
+other_tags = ["glTF"]
+formats = ["list"]

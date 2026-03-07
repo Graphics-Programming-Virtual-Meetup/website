@@ -4,7 +4,7 @@ categories = ["Ray Tracing/Path Tracing", "PBR/Light Transport", "Randomness/Mon
 description = "The classic Kajiya rendering equation paper introduced the \"rendering equation\" and the path tracing algorithm"
 formats = ["paper"]
 other_tags = ["classic"]
-priority = 10
+priority = 5
 
 [image]
 src = "assets/Kajiya.jpg"

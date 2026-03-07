@@ -1,0 +1,5 @@
+title = "Efficient Shadows from Many Lights (2015)"
+link = "https://efficientshading.com/wp-content/uploads/s2015_shadows.pdf"
+categories = ["Graphics Effects/Shadows/Shadow Mapping"]
+description = "Techniques for efficiently rendering shadows from many light sources in real-time"
+formats = ["slides"]

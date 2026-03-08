@@ -1,6 +1,6 @@
 title = "Lecture 19: Variance Reduction (CMU 15-462/662)"
 link = "https://youtu.be/IQhLk_XaFc8"
-categories = ["Randomness/Variance Reduction", "Randomness/Monte Carlo", "Ray Tracing"]
+categories = ["Randomness/Variance Reduction", "Randomness/Sampling", "Randomness/Monte Carlo", "Ray Tracing"]
 description = "An overview various variance reduction techniques for Monte Carlo rendering, covering bidirectional path tracing, Metropolis-Hastings algorithm, MIS, stratified Sampling, low-discrepancy sampling, blue noise, photon mapping, and finite element radiosity"
 formats = ["video"]
 priority = 5

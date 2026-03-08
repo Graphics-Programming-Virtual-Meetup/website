@@ -1,0 +1,6 @@
+title = "Direct3D 12 programming guide"
+link = "https://learn.microsoft.com/en-us/windows/win32/direct3d12/directx-12-programming-guide"
+categories = ["DX12/Overview"]
+description = "Microsoft's official programming guide for DirectX 12"
+formats = ["tutorial"]
+priority = 2

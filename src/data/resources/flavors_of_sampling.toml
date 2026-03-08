@@ -1,0 +1,6 @@
+title = "Flavors of Sampling in Ray Tracing"
+link = "http://psgraphics.blogspot.com/2018/10/flavors-of-sampling-in-ray-tracing.html"
+categories = ["Randomness/Monte Carlo", "Randomness/Sampling", "Ray Tracing/Path Tracing"]
+description = "An overview of different sampling strategies used in ray tracing."
+formats = ["article"]
+priority = 1

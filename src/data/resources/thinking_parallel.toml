@@ -1,0 +1,8 @@
+title = "Thinking Parallel (2012)"
+link = "https://developer.nvidia.com/blog/thinking-parallel-part-i-collision-detection-gpu/"
+categories = ["CUDA", "GPU Compute/Parallel Algorithms", "GPU Compute/Applications"]
+description = "Three part series on parallel algorithms, covering GPU collision detection, tree traversal, and tree construction."
+formats = ["article"]
+
+[image]
+src = "assets/thinking_parallel.png"

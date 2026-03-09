@@ -1,0 +1,9 @@
+title = "Vulkanised 2026: Frames in Flight Demystified"
+link = "https://www.youtube.com/watch?v=Khxc_Qky-fM"
+categories = ["Vulkan/Sync"]
+description = "In depth introduction to the \"frames in flight\" concept in Vulkan"
+formats = ["video", "slides"]
+priority = 5
+
+[image]
+src = "assets/vulkanised_2026_frames_in_flight_demystified.jpg"

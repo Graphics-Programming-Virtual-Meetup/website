@@ -1,0 +1,8 @@
+title = "Grass Rendering Series"
+link = "https://hexaquo.at/pages/grass-rendering-series-part-1-theory/"
+categories = ["Graphics Effects/Grass", "Game Engines/Godot"]
+description = "Blog post series talks about theory of grass rendering, how to implement that in Godot, and adding animation, interaction, and LOD"
+formats = ["article"]
+
+[image]
+src = "assets/grass_rendering_series.webp"

@@ -1,0 +1,8 @@
+title = "Life of a triangle - NVIDIA's logical pipeline (2015)"
+link = "https://developer.nvidia.com/content/life-triangle-nvidias-logical-pipeline"
+categories = ["Rasterization/Graphics Pipeline"]
+description = "This article walks through how NVIDIA GPUs process a triangle from draw call to final pixel output"
+formats = ["article"]
+
+[image]
+src = "assets/life_of_a_triangle.png"

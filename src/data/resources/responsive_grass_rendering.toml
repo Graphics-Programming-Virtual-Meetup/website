@@ -1,0 +1,8 @@
+title = "Responsive Real-Time Grass Rendering for General 3D Scenes (2017)"
+link = "https://www.cg.tuwien.ac.at/research/publications/2017/JAHRMANN-2017-RRTG/JAHRMANN-2017-RRTG-draft.pdf"
+categories = ["Graphics Effects/Grass", "Rasterization/Tessellation"]
+description = "A paper on real-time grass rendering with realistic physics with the help of compute shader and the hardware-tessellation pipeline"
+formats = ["paper"]
+
+[image]
+src = "assets/responsive_grass_rendering.jpeg"

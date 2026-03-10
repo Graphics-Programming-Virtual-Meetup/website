@@ -1,0 +1,5 @@
+title = "Yet another blog explaining Vulkan synchronization (2019)"
+categories = ["Vulkan/Sync"]
+link = "https://themaister.net/blog/2019/08/14/yet-another-blog-explaining-vulkan-synchronization/"
+description = "Another blog post trying to instill a mental model on Vulkan synchronization to readers"
+formats = ["article"]

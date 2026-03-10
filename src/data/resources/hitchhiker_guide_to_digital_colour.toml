@@ -1,0 +1,9 @@
+title = "The Hitchhiker's Guide to Digital Colour"
+link = "https://hg2dc.com/"
+categories = ["Color/Overview"]
+description = "A step by step guidebook for digital pixel pushers trying to get a firm grasp on colour"
+formats = ["article"]
+priority = 1
+
+[image]
+src = "assets/rgb-is-not-a-colour-space.png"

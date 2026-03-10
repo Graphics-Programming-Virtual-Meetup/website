@@ -1,0 +1,8 @@
+title = "The Quest for Very Wide Outlines"
+link = "https://bgolus.medium.com/the-quest-for-very-wide-outlines-ba82ed442cd9"
+categories = ["Graphics Effects/Line/Outline"]
+description = "An exploration of techniques for rendering very wide outlines around objects."
+formats = ["article"]
+
+[image]
+src = "assets/very_wide_outline.webp"

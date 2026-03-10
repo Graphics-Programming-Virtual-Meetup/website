@@ -1,0 +1,9 @@
+title = "Understanding Vulkan Synchronization"
+categories = ["Vulkan/Sync"]
+link = "https://www.khronos.org/blog/understanding-vulkan-synchronization"
+description = "Khronos blog post explaining Vulkan synchronization concepts (with notes on Synchronization2)"
+formats = ["article"]
+priority = 1
+
+[image]
+src = "assets/2021-blog-image-Khronos_Vulkan_Chart.svg"

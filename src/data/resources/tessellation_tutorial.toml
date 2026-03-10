@@ -1,0 +1,8 @@
+title = "OGLDev Tutorial 30: Basic Tessellation"
+link = "https://ogldev.org/www/tutorial30/tutorial30.html"
+categories = ["Rasterization/Tessellation", "OpenGL"]
+description = "tutorial on tessellation shaders"
+formats = ["article"]
+
+[image]
+src = "assets/tessellation.jpg"

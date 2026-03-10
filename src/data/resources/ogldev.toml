@@ -1,0 +1,11 @@
+title = "OGLdev"
+link = "https://learnopengl.com/"
+categories = ["Beginner Friendly", "OpenGL", "Overview"]
+description = "Another set of step-by-step video tutorials on OpenGL. The tutorial includes both text and videos, which may be preferable to people who prefer video."
+formats = ["tutorial", "video"]
+languages = ["c++", "GLSL"]
+priority = 9
+
+[image]
+src = "assets/ogldev.png"
+alt = "OGLdev modern OpenGL Tutorials"

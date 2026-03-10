@@ -1,0 +1,5 @@
+title = "Vulkan Timeline Semaphores"
+categories = ["Vulkan/Sync"]
+link = "https://www.khronos.org/blog/vulkan-timeline-semaphores"
+description = "Khronos blog post introducing Vulkan timeline semaphores for GPU synchronization"
+formats = ["article"]

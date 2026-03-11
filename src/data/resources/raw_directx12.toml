@@ -1,0 +1,8 @@
+title = "Raw DirectX 12"
+link = "https://alain.xyz/blog/raw-directx12"
+categories = ["DX12/Overview"]
+description = "An introduction to writing a simple Hello Triangle DirectX 12 application"
+formats = ["tutorial"]
+
+[image]
+src = "assets/raw_dx12.svg"

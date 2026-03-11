@@ -1,0 +1,8 @@
+title = "Interactive explanation of marching cubes and dual contouring"
+link = "https://wordsandbuttons.online/interactive_explanation_of_marching_cubes_and_dual_contouring.html"
+description = "An interactive explanation comparing marching cubes and dual contouring iso-surface algorithms"
+categories = ["Volumetric/Isosurface Extraction", "Geometry/Mesh Generation"]
+formats = ["article"]
+
+[image]
+src = "assets/marching_cubes_dual_contouring.png"

@@ -1,0 +1,9 @@
+title = "Know your SSAO artifacts (2013)"
+link = "https://mtnphil.wordpress.com/2013/06/26/know-your-ssao-artifacts/"
+categories = ["Graphics Effects/Ambient Occlusion/SSAO"]
+description = "A guide to identifying and mitigating common SSAO rendering artifacts"
+formats = ["article"]
+language = ["GLSL"]
+
+[image]
+src = "assets/know_your_ssao_artifacts.jpg"

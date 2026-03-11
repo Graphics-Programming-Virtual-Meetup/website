@@ -1,0 +1,10 @@
+title = "Introduction to Computer Graphics - Cem Yuksel (2021)"
+link = "https://youtube.com/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh"
+categories = ["Beginner Friendly", "Course", "Overview"]
+description = "A video lecture series introducing computer graphics fundamentals by Cem Yuksel."
+formats = ["video", "assignments"]
+languages = ["javascript"]
+priority = 30
+
+[image]
+src = "assets/intro_cg_cem_yuksel.jpg"

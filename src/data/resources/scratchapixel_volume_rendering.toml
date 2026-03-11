@@ -1,0 +1,10 @@
+title = "Scratchapixel Volume Rendering"
+link = "https://www.scratchapixel.com/lessons/3d-basic-rendering/volume-rendering-for-developers/intro-volume-rendering.html"
+categories = ["Volumetric/Overview", "Ray Tracing/Ray Marching"]
+description = "Scratchapixel's in-depth introduction to volumetric rendering using ray marching"
+formats = ["tutorial"]
+languages = ["c++"]
+priority = 5
+
+[image]
+src = "assets/voldev-ray-marching-cloud1.png"

@@ -1,3 +1,3 @@
 ---
-title: Volumetric rendering
+title: Volumetric Rendering
 ---

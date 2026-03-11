@@ -1,0 +1,10 @@
+title = "The Graphics Codex: Ray Marching"
+link = "https://graphicscodex.com/app/app.html?page=_rn_rayMrch"
+categories = ["Ray Tracing/Ray Marching", "Geometry/SDF"]
+description = "A good introduction of ray marching that progresses from naive ray marching to the sphere tracing algorithm. It then covers some common SDF primitives and operations, normal computation, and performance optimizations"
+formats = ["tutorial"]
+languages = ["c++", "GLSL"]
+priority = 6
+
+[image]
+src = "./assets/ray-march-reference.jpg"

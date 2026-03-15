@@ -1,0 +1,3 @@
+---
+related: ["pbr/spectral-rendering"]
+---

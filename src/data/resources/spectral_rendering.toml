@@ -1,0 +1,10 @@
+title = "Spectral Rendering series"
+link = "https://momentsingraphics.de/SpectralRenderingOverview.html"
+categories = ["PBR/Spectral Rendering"]
+description = "Blog post series describes how spectral rendering can be implemented at a relatively low overhead (as compared to RGB rendering) and why that is beneficial"
+formats = ["article"]
+languages = ["c"]
+priority = 5
+
+[image]
+src = "assets/spectral_rendering.png"

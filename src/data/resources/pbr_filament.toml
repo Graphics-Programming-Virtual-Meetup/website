@@ -1,0 +1,9 @@
+title = "Physically Based Rendering in Filament"
+link = "https://google.github.io/filament/Filament.html"
+categories = ["PBR/Overview", "PBR/Realtime"]
+description = "Google's documentation on the PBR system on their Filament renderer on Android. Best in class documentation about high performance PBR lighting shaders"
+formats = ["article"]
+priority = 19
+
+[image]
+src = "assets/filament.png"

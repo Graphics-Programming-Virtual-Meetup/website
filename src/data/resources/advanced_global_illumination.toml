@@ -1,5 +1,5 @@
 title = "Advanced Global Illumination"
 link = "https://www.amazon.com/Advanced-Global-Illumination-Philip-Dutre/dp/1568813074"
-categories = ["PBR/Light Transport"]
+categories = ["PBR/Overview"]
 description = "An advanced book focused on light transport theory for global illumination."
 formats = ["book"]

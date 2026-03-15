@@ -1,0 +1,10 @@
+title = "Learn OpenGL: Shadow Mapping"
+link = "https://learnopengl.com/PBR/Theory"
+categories = ["PBR/Overview", "PBR/Realtime"]
+description = "Learn OpenGL's tutorial on physically based rendering"
+formats = ["tutorial"]
+languages = ["c++", "GLSL"]
+priority = 20
+
+[image]
+src = "assets/learnopengl_pbr.png"

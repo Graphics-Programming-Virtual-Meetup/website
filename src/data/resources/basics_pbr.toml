@@ -1,0 +1,5 @@
+title = "Basics of physically-based rendering (Siggraph 2012)"
+link = "https://www.researchgate.net/publication/262326548_Basics_of_physically-based_rendering"
+categories = ["PBR/Overview"]
+description = "This tutorial will cover the basics of physically-based rendering such as reflection models (BRDF), volume scattering (phase functions), optical phenomena (dispersion and polarization)"
+formats = ["paper"]

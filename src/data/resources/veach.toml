@@ -1,6 +1,6 @@
 title = " Robust Monte Carlo Methods for Light Transport Simulation "
 link = "https://dl.acm.org/doi/10.1145/15886.15902"
-categories = ["Ray Tracing/Path Tracing", "PBR/Light Transport", "Randomness/Monte Carlo", "Randomness/Variance Reduction/Importance Sampling"]
+categories = ["Ray Tracing/Path Tracing", "PBR/Overview", "Randomness/Monte Carlo", "Randomness/Variance Reduction/Importance Sampling"]
 description = "the Academy Award-winning Ph.D. thesis by Eric Veach. It starts from bidirectional light transport algorithms and introduces multiple importance sampling and Metropolis light transport"
 formats = ["paper"]
 other_tags = ["classic"]

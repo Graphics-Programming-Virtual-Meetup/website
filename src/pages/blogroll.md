@@ -16,3 +16,4 @@ Below is a blogroll of regular attendees of the meetup.
 ## Other links
 
 - [website of Graphics Programming discord](https://graphics-programming.org/)
+- [Graphics Programming weekly](www.jendrikillner.com/article_database/)

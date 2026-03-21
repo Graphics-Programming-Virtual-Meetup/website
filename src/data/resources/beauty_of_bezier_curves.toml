@@ -1,0 +1,8 @@
+title = "The Beauty of Bézier Curves (Freya Holmér)"
+link = "https://www.youtube.com/watch?v=aVwxzDHniEw"
+categories = ["Beginner Friendly", "Geometry/Curves"]
+description = "Explaining Bézier curves with a lot of visualizations"
+formats = ["video"]
+
+[image]
+src = "assets/beauty_of_bezier_curves.jpg"

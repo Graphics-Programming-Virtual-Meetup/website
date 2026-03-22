@@ -14,7 +14,7 @@ interface CategoryNode {
 // Compute all unique categories and
 function buildCategoryTree(
   resources: CollectionEntry<"resources">[],
-  categories: CollectionEntry<"resourceCategories">[]
+  categories: CollectionEntry<"resourceCategories">[],
 ): CategoryNode[] {
   const categoryPriority = new Map<string, number>();
   for (const category of categories) {
@@ -39,7 +39,7 @@ function buildCategoryTree(
         if (parent) {
           const parentNode = categoryMap.get(parent.slug)!;
           const existing = parentNode.children.find(
-            (child) => child.category.slug == category.slug
+            (child) => child.category.slug == category.slug,
           );
           if (!existing) {
             parentNode.children.push(categoryMap.get(category.slug)!);
@@ -87,7 +87,7 @@ const { resources, currentPath = "" } = Astro.props;
 
 const categories = buildCategoryTree(
   resources,
-  await getCollection("resourceCategories")
+  await getCollection("resourceCategories"),
 );
 ---
 
@@ -133,7 +133,7 @@ const categories = buildCategoryTree(
   </nav>
 </div>
 
-<style>
+<style is:global>
   .sidebar-toggler {
     --sidebar-toggler-size: 4rem;
     --bg-start: light-dark(

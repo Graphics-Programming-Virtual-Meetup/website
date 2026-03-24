@@ -1,0 +1,8 @@
+title = "Raytraced Shadows in Call of Duty: Modern Warfare (2020)"
+link = "https://www.youtube.com/watch?v=VXp-HEAw-l4"
+categories = ["Graphics Effects/Shadows/Raytraced", "Ray Tracing/API"]
+description = "The story behind how (almost) pixel perfect shadows were introduced into Modern Warfare to make it even more realistic"
+formats = ["video"]
+
+[image]
+src = "assets/raytraced_shadows_cod.png"

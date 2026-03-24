@@ -1,0 +1,8 @@
+title = "Physically based rendering from first principles"
+link = "https://imadrahmoune.com/pbr/"
+categories = ["PBR/Overview"]
+description = "An interactive article exploring the physical phenomena that create light and the fundamental laws governing its interaction with matter, and gradually introduce models of creating physically realistic renderings"
+formats = ["article"]
+
+[image]
+src = "./assets/pbr_first_principle.png"

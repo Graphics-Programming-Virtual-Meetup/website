@@ -1,0 +1,8 @@
+title = "Modern (Bindless) Sprite Batch for Vulkan (2021)"
+categories = ["Graphics Effects/Sprite Rendering", "Graphics Techniques/Bindless", "Vulkan/Bindless"]
+link = "https://jorenjoestar.github.io/post/modern_sprite_batch/"
+description = "A guide to implementing bindless sprite batching in one draw call in Vulkan"
+formats = ["article"]
+
+[image]
+src = "./assets/bindless_spritebatch_renderdoc.png"

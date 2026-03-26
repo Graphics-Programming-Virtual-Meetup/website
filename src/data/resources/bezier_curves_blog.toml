@@ -1,0 +1,8 @@
+title = "Bézier Curves"
+link = "https://blog.richardekwonye.com/bezier-curves"
+categories = ["Geometry/Curves"]
+description = "An interactive explanation of Bezier curves, with the perspective from a web developer (CSS and SVG)"
+formats = ["article"]
+
+[image]
+src = "assets/bezier_curves.png"

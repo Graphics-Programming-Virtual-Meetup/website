@@ -1,6 +1,6 @@
 title = "TinyBVH"
 link = "https://github.com/jbikker/tinybvh"
-categories = ["Ray Tracing/Acceleration Structures", "Tools"]
+categories = ["Ray Tracing/Acceleration Structures", "Libraries"]
 description = "Single-header zero-dependency BVH construction and traversal library"
 formats = ["repository"]
 languages = ["c++"]

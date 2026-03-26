@@ -1,0 +1,6 @@
+title = "volk"
+link = "https://github.com/zeux/volk"
+description = "A meta-loader for Vulkan that simplifies dynamic loading of Vulkan and automatically loads extensions"
+categories = ["Libraries", "Vulkan/Libraries"]
+formats = ["repository"]
+languages = ["c"]

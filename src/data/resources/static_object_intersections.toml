@@ -1,0 +1,5 @@
+title = "Object Intersections - Real-Time Rendering"
+link = "https://www.realtimerendering.com/intersections.html"
+categories = ["Geometry/Primitive Intersection", "Ray Tracing/Ray-Object Intersection"]
+description = "Tables of intersection algorithms for various geometric primitives"
+formats = ["list"]

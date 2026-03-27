@@ -1,0 +1,9 @@
+title = "Learn OpenGL guest article: Skeletal Animation"
+link = "https://learnopengl.com/Guest-Articles/2020/Skeletal-Animation"
+categories = ["Animation/Skeletal"]
+description = "Learn OpenGL guest article on skeletal animation"
+formats = ["article"]
+languages = ["c++", "GLSL"]
+
+[image]
+src = "assets/learnopengl_skeletal_animation.png"

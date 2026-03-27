@@ -1,0 +1,10 @@
+title = "Pyramidal Parametrics (1983)"
+link = "http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15869-f11/www/readings/williams83_mipmap.pdf"
+categories = ["Graphics Techniques/Mipmapping"]
+description = "The original paper introducing mipmapping"
+formats = ["paper"]
+other_tags = ["classic"]
+priority = 10
+
+[image]
+src = "assets/pyramidal_parametrics.png"

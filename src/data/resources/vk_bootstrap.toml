@@ -1,0 +1,6 @@
+title = "vk-bootstrap"
+link = "https://github.com/charles-lunarg/vk-bootstrap"
+categories = ["Libraries", "Vulkan/Libraries"]
+description = "A utility library that jump starts initialization of Vulkan"
+formats = ["repository"]
+languages = ["c++"]

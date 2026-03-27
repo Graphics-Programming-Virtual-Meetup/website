@@ -1,0 +1,8 @@
+title = "Deriving Lambertian BRDF from first principles"
+link = "https://sakibsaikia.github.io/graphics/2019/09/10/Deriving-Lambertian-BRDF-From-First-Principles.html"
+categories = ["PBR/BRDF"]
+description = "A derivation of the Lambertian BRDF from first principles using calculus"
+formats = ["article"]
+
+[image]
+src = "assets/deriving_lambertian_brdf.jpg"

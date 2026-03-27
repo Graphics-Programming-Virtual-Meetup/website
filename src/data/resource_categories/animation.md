@@ -1,0 +1,1 @@
+See also [Physical Simulation](/resources/categories/physical-simulation) for physics-based animation.

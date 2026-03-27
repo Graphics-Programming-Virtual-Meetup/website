@@ -1,0 +1,9 @@
+title = "Skeletal animation in glTF"
+categories = ["Animation/Skeletal", "File Formats/GLTF"]
+link = "https://lisyarus.github.io/blog/graphics/2023/07/03/gltf-animation.html"
+description = "A guide of skeletal animation and how to implement it with glTF"
+languages = ["c++", "glsl"]
+formats = ["article"]
+
+[image]
+src = "assets/skeletal_animation_gltf.jpg"

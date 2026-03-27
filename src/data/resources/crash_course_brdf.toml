@@ -1,0 +1,8 @@
+title = "Crash Course in BRDF Implementation (2021)"
+link = "https://boksajak.github.io/blog/BRDF"
+categories = ["PBR/BRDF"]
+description = "This article helps to understand and implement BRDFs commonly used in game engines, for use in both rasterization and emerging realtime raytracing"
+formats = ["article", "repository"]
+
+[image]
+src = "assets/crash_course_BRDF.jpg"

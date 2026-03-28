@@ -1,0 +1,7 @@
+title = "Vulkan Pills 1: Bindless Textures (2021)"
+categories = ["Graphics Techniques/Bindless", "Vulkan/Descriptor Indexing"]
+link = "https://jorenjoestar.github.io/post/vulkan_bindless_texture/"
+description = "Introduction on how to use Vulkan bindless features"
+formats = ["article"]
+languages = ["c++", "GLSL"]
+priority = 1

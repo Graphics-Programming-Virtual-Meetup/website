@@ -1,4 +1,4 @@
 ---
-title: "Bindless in Vulkan"
+title: "Vulkan Descriptor Indexing"
 related: ["graphics-techniques/bindless"]
 ---

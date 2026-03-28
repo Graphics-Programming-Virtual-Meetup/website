@@ -1,0 +1,8 @@
+title = "Procedural Generation with Wave Function Collapse"
+link = "https://www.gridbugs.org/wave-function-collapse/"
+categories = ["Gamedev/Procedural Generation/Wave Function Collapse"]
+description = "Build an intuition for how and why the wave function collapse algorithm works"
+formats = ["article"]
+
+[image]
+src = "assets/wave_function_collapse.png"

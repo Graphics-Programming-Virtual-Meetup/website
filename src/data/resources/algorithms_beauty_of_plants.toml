@@ -1,0 +1,8 @@
+title = "The Algorithmic Beauty of Plants (1990)"
+link = "https://algorithmicbotany.org/papers/abop/abop.pdf"
+categories = ["Gamedev/Procedural Generation/L-systems"]
+description = "Free online book on modeling plants with L-systems"
+formats = ["book"]
+
+[image]
+src = "assets/abop-cover.jpg"

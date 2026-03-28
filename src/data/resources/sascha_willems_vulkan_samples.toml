@@ -1,0 +1,7 @@
+title = "Sascha Willems' Vulkan Samples"
+categories = ["Vulkan/Code Samples"]
+link = "https://github.com/SaschaWillems/Vulkan"
+description = "A comprehensive collection of open source C++ examples for Vulkan"
+formats = ["repository"]
+languages = ["c++", "GLSL", "Slang"]
+priority = 5

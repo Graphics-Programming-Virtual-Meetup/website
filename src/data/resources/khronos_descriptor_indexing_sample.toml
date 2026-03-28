@@ -1,0 +1,10 @@
+title = "Khronos Descriptor indexing Sample"
+categories = ["Graphics Techniques/Bindless", "Vulkan/Descriptor Indexing", "Vulkan/Code Samples"]
+link = "https://jorenjoestar.github.io/post/vulkan_bindless_texture/"
+description = "Overview of the descriptor indexing feature, its use cases, and gives coding sample"
+formats = ["article", "repository"]
+languages = ["c++", "GLSL"]
+priority = 2
+
+[image]
+src = "assets/khronos_descriptor_indexing_sample.png"

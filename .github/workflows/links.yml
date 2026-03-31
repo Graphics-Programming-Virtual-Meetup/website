@@ -21,7 +21,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           fail: false
-          args: --root-dir "$(pwd)" --verbose --no-progress './**/*.md' './**/*.toml'
+          args: --root-dir "$(pwd)" --verbose --no-progress --fallback-extensions md './**/*.md' './**/*.toml'
 
       - name: Create Issue From File
         if: steps.lychee.outputs.exit_code != 0

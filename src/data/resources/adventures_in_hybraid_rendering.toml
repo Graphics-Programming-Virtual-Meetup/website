@@ -1,6 +1,6 @@
 title = "Adventures in Hybrid Rendering (2021)"
 categories = ["Ray Tracing/Hybrid Rendering"]
-link = "https://diharaw.github.io/post/adventures_in_hybrid_rendering"
+link = "https://diharaw.github.io/post/adventures_in_hybrid_rendering/"
 description = "A blog post on implementing a hybrid ray tracing rendering pipeline"
 formats = ["article"]
 

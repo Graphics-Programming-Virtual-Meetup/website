@@ -1,5 +1,5 @@
 title = "McGuire Computer Graphics Archive"
-link = "http://casual-effects.com/data/index.html"
+link = "https://casual-effects.com/data/index.html"
 categories = ["Assets/Models", "Assets/Scenes"]
 description = "A collection of 3D scenes and models in OBJ format for research and testing."
 formats = ["list"]

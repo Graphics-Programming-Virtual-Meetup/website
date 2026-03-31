@@ -1,5 +1,5 @@
 title = "vk_mini_path_tracer"
-link = "https://nvpro-samples.github.io/vk_mini_path_tracer"
+link = "https://nvpro-samples.github.io/vk_mini_path_tracer/"
 description = "A relatively small, beginner-friendly path tracing tutorial using Vulkan's ray tracing API"
 categories = ["Vulkan/Ray Tracing", "Ray Tracing/API"]
 formats = ["tutorial"]

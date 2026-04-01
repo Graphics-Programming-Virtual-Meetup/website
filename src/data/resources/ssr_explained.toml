@@ -1,0 +1,9 @@
+title = "Screen-Space Reflections Explained (2021)"
+link = "https://jhstrom.blogspot.com/2021/03/screen-space-reflections-explained.html"
+categories = ["Graphics Effects/Reflection/SSR"]
+description = "A explanation of screen-space reflection with code snippet"
+languages = ["GLSL"]
+formats = ["article"]
+
+[image]
+src = "assets/SSR7.png"

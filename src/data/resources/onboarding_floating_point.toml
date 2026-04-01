@@ -1,0 +1,6 @@
+title = "Onboarding floating-point"
+link = "https://www.altdevarts.com/p/onboarding-floating-point"
+categories = ["Numerics/Floating Point"]
+description = "A series about floating-point numbers by Mike Acton, tailored for game developers"
+formats = ["article"]
+priority = 1

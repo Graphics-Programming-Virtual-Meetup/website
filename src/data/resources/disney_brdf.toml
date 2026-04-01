@@ -1,0 +1,8 @@
+title = "Physically Based Shading at Disney (2012)"
+link = "https://blog.selfshadow.com/publications/s2012-shading-course/burley/s2012_pbs_disney_brdf_notes_v3.pdf"
+description = "Disney's influential SIGGRAPH paper on their principled BRDF model."
+formats = ["paper"]
+categories = ["PBR/Reflection Models"]
+
+[image]
+src = "assets/Physically-Based-Shading-at-Disney.webp"

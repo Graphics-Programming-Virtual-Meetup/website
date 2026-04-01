@@ -1,0 +1,9 @@
+title = "GPU path tracing tutorial series (2015)"
+link = "https://raytracey.blogspot.com/2015/10/gpu-path-tracing-tutorial-1-drawing.html"
+categories = ["Ray Tracing/GPU", "CUDA/Applications"]
+description = "Blog post series on implementing path tracer on GPU"
+formats = ["article", "tutorial"]
+languages = ["c++", "CUDA"]
+
+[image]
+src = "assets/dragonDOF3.png"

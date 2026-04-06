@@ -1,0 +1,8 @@
+title = "Tracing Ray Differentials (1999)"
+link = "https://graphics.stanford.edu/papers/trd/trd.pdf"
+description = "Useful paper that goes over ray differentials and selecting proper mip level when doing raytracing"
+categories = ["Ray Tracing/Ray Differentials", "Graphics Techniques/Mipmapping"]
+formats = ["paper"]
+
+[image]
+src = "assets/aniso_lin_diff_2.jpg"

@@ -25,11 +25,13 @@ const { title, description, allResources, resources, currentPath } =
 
     <main>
       <slot />
-      {
-        resources.map((resource) => (
-          <Item resource={resource} currentPath={currentPath} />
-        ))
-      }
+      <ul class="list-style-none">
+        {
+          resources.map((resource) => (
+            <Item resource={resource} currentPath={currentPath} />
+          ))
+        }
+      </ul>
     </main>
   </div>
 </BaseLayout>

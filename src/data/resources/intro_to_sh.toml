@@ -1,0 +1,9 @@
+title = "Introduction to Spherical Harmonics for Graphics Programmers"
+link = "https://gpfault.net/posts/sph.html"
+categories = ["math/Spherical Harmonics"]
+description = "Give readers the vocabulary and knowledge necessary to further understand spherical harmonics"
+formats = ["article"]
+priority = 1
+
+[image]
+src = "assets/sh.png"

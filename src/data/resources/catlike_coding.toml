@@ -1,0 +1,9 @@
+title = "Catlike Coding"
+categories = ["Beginner Friendly", "Game Engines/Unity", "Game Engines/Godot"]
+link = "https://catlikecoding.com/"
+description = "Tutorials focused on C# and shaders in Unity"
+formats = ["tutorial"]
+languages = ["C#"]
+
+[image]
+src = "assets/catlikecoding.jpg"

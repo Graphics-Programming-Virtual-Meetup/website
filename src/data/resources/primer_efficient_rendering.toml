@@ -1,0 +1,9 @@
+title = "A Primer On Efficient Rendering Algorithms & Clustered Shading (2018)"
+link = "https://www.aortiz.me/2018/12/21/CG.html"
+categories = ["Rasterization/Shading Techniques/Clustered"]
+description = "This post surveys various shading techniques including forward, deferred, tiled, and clustered shading. Then it talks about implementing custered shading on top of both forward and deferred shading"
+formats = ["article"]
+languages = ["GLSL"]
+
+[image]
+src = "assets/clusters.png"

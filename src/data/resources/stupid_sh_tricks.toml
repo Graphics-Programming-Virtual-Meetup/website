@@ -1,0 +1,9 @@
+title = "Stupid Spherical Harmonics (SH) Tricks (2008)"
+link = "https://www.ppsloan.org/publications/StupidSH36.pdf"
+categories = ["math/Spherical Harmonics"]
+description = "This paper provides a brief overview of spherical harmonics and discusses several ways they can be used in interactive graphics and problems that might aris"
+formats = ["paper"]
+priority = 1
+
+[image]
+src = "assets/stupid_sh.jpeg"

@@ -1,0 +1,8 @@
+title = "Modern rendering culling techniques"
+link = "https://krupitskas.com/posts/modern_culling_techniques/"
+categories = ["Graphics Techniques/Culling"]
+description = "A survey to various culling techniques in real-time rendering"
+formats = ["article"]
+
+[image]
+src = "assets/modern_rendering_culling_techniques.png"

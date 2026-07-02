@@ -1,7 +1,7 @@
-title = "3D Graphics Rendering Cookbook"
-link = "https://www.amazon.com/Graphics-Rendering-Cookbook-comprehensive-algorithms/dp/1838986197"
-description = "A book that covers and compares both the OpenGL and Vulkan APIs, while also covering various recipes about making a renderer."
-categories = ["Vulkan/Tutorials", "OpenGL"]
+title = "Vulkan 3D Graphics Rendering Cookbook"
+link = "https://www.amazon.com/Vulkan-Graphics-Rendering-Cookbook-high-performance-ebook/dp/B0DHKHRD4X"
+description = "A book introduces how to build a Vulkan renderer. It also covers various graphics programming topics such as PBR rendering, GLTF, scene graph management, animation, postprocessing and image-based techniques, and culling."
+categories = ["Vulkan/Tutorials", "File Formats/GLTF"]
 formats = ["book"]
 languages = ["c++"]
 paid = true

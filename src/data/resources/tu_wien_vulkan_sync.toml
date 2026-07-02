@@ -1,0 +1,10 @@
+title = "Vulkan Synchronization"
+link = "https://youtu.be/GiKbGWI4M-Y?si=hbGfccr50UGjJUcW"
+categories = ["Vulkan/Sync"]
+description = "A digestable video introducing Vulkan synchronization. All available synchronization methods and primitives are described in this episode: Wait idle operations, fences, binary semaphores, timeline semaphores, execution barriers, memory barriers, render pass subpass dependencies, and events."
+formats = ["video", "slides"]
+languages = ["c++"]
+priority = 1
+
+[image]
+src = "assets/tu_wien_vulkan.jpg"

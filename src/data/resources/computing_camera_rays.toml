@@ -1,0 +1,8 @@
+title = "Computing Camera Rays"
+link = "https://momentsingraphics.de/CameraRays.html"
+categories = ["Ray Tracing/Ray Generation", "Ray Tracing/Hybrid Rendering"]
+description = "Derives camera ray generation based on readily available transformation matrices"
+formats = ["article"]
+
+[image]
+src = "assets/camera_rays.jpg"

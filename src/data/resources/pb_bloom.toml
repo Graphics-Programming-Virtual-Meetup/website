@@ -1,0 +1,8 @@
+title = "Physically Based Bloom (2022)"
+link = "https://learnopengl.com/Guest-Articles/2022/Phys.-Based-Bloom"
+categories = ["Graphics Effects/Bloom"]
+description = "Another article introducing physically-based bloom techniques that doesn't depend on a threshold. This prevents various shortcomings with traditional blooms. Can be view as an alternative implementation to \"Next Generation Post Processing in Call of Duty\"."
+formats = ["article"]
+
+[image]
+src = "assets/pb_bloom.png"

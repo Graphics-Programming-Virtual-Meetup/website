@@ -1,0 +1,8 @@
+title = "Bloom Disasters (2008)"
+link = "https://gangles.ca/2008/07/18/bloom-disasters/"
+categories = ["Graphics Effects/Bloom"]
+description = "A good introduction on the use of different types of noise for random number generation, focusing on applications in real time rendering"
+formats = ["article"]
+
+[image]
+src = "assets/bloom-oblivion.jpg"

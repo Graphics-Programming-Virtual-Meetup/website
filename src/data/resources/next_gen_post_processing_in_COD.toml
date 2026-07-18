@@ -1,0 +1,8 @@
+title = "Next Generation Post Processing in Call of Duty: Advanced Warfare (2014)"
+link = "https://www.iryoku.com/next-generation-post-processing-in-call-of-duty-advanced-warfare/"
+categories = ["Graphics Effects/Bloom"]
+description = "Introduced realistic and physically correct post-processing technique with proper bloom. It uses pyramidal filter hierarchy for blooms to improves temporal stability and robustness"
+formats = ["slides"]
+
+[image]
+src = "assets/Next-Generation-Post-Processing-in-Call-of-Duty-Advanced-Warfare-1280x720.jpg"

@@ -1,0 +1,10 @@
+title = "Mastering Graphics Programming with Vulkan"
+link = "https://www.packtpub.com/en-us/product/mastering-graphics-programming-with-vulkan-9781803244792"
+description = "A book introduces advanced rendering techniques such as GPU-driven rendering, render graphs, clustered shading, and TAA."
+categories = ["Vulkan/Tutorials"]
+formats = ["book"]
+languages = ["c++"]
+paid = true
+
+[image]
+src = "assets/mastering-graphics-programming-with-vulkan.jpg"

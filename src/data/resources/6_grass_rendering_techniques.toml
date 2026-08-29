@@ -1,0 +1,8 @@
+title = "Six Grass Rendering Techniques in Unity (2022)"
+link = "https://danielilett.com/2022-12-05-tut6-2-six-grass-techniques/"
+description = "This article surveyed 6 different ways to render grass in Unity: static mesh, geometry + tessellation, procedural rendering + compute, billboarding, unity terrains, and impostors."
+categories = ["Graphics Effects/Grass", "Graphics Effects/Billboard", "Game Engines/Unity"]
+formats = ["article"]
+
+[image]
+src = "assets/6 grass rendering techniques.png"

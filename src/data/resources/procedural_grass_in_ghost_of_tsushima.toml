@@ -1,0 +1,8 @@
+title = " Procedural Grass in 'Ghost of Tsushima' (2021)"
+link = "https://www.youtube.com/watch?v=Ibe1JBF5i5Y"
+description = "A talk discussing how they generate acres of grass within reasonable memory and performance limits, techniques for rendering and animating individual blades, and methods for making thousands of individual blades of grass look like a natural field."
+categories = ["Graphics Effects/Grass"]
+formats = ["video"]
+
+[image]
+src = "assets/procedural_grass_in_ghost_of_tsushima.jpg"

@@ -1,0 +1,8 @@
+title = " Blowing from the West: Simulating Wind in 'Ghost of Tsushima' (2021)"
+link = "https://www.youtube.com/watch?v=d61_o4CGQd8"
+description = "This talk presents a variety of tips and tricks used to make these wind-driven simulations fast and believable, while utilizing the Playstation GPU to its maximum."
+categories = ["Physical Simulation/Wind"]
+formats = ["video"]
+
+[image]
+src = "assets/simulating_wind_in_ghost_of_tsushima.jpg"

@@ -1,0 +1,8 @@
+title = "Wind Simulation in God of War (2019)"
+link = "https://www.youtube.com/watch?v=dDgyBKkSf7A"
+description = "This talk discusses the full 3D GPU fluid simulation behind God of War's wind and explains why it's useful"
+categories = ["Physical Simulation/Fluid", "Physical Simulation/Wind"]
+formats = ["video"]
+
+[image]
+src = "assets/wind_simulation_in_god_of_war.jpg"
